@@ -15,9 +15,9 @@ export default {
   },
 
   methods: {
-    async showTasks() {
-    const fetchTasks = await this.tasksStore.fetchTasks();
-    console.log(fetchTasks);
+    showTasks() {
+    this.tasksStore.fetchTasks();
+   
 }
   }
 }
