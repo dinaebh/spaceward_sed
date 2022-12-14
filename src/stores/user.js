@@ -31,7 +31,7 @@ export default defineStore("user", {
       };
       if (data.user) {
         this.user = data.user;
-        return this.$router.push ("/loginform")
+        return this.$router.push ("/loginscreen")
       };
       this.user_id = response.data.user.id;
     },
@@ -49,7 +49,21 @@ export default defineStore("user", {
       if (error) {
       return alert(error);
     }
-      if (data) this.user = data.user;
+      if (data) {
+        this.user = data.user
+      this.$router.push("/")
+    };
+      
+    },
+
+    async signOut() {
+      const { error } = await supabase.auth.signOut()
+      if (error) {
+        throw error
+      } else {
+        this.$router.push ("/loginscreen")
+      }
+      
     },
 
   },

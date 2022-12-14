@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import DashBoard from '../views/Dashboard.vue';
 import VerifyMail from '../components/VerifyMail.vue';
-import LogInForm from '../components/LogInForm.vue';
+import LogInScreen from '../views/LogInScreen.vue';
+import SignUpScreen from '../views/SignUpScreen.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,8 +16,12 @@ const router = createRouter({
     component: VerifyMail,
 },
 {
-  path: "/loginform", 
-  component: LogInForm,
+  path: "/loginscreen", 
+  component: LogInScreen,
+},
+{
+  path: "/signupscreen", 
+  component: SignUpScreen,
 },
   ],
 });

@@ -1,25 +1,25 @@
 <template>
-    Dashboard
-    <button @click="login">Log In!</button>
-    <SignInForm />
+
+<SignOut />
+<TaskColumn />
 </template>
 
 <script>
-// import { mapStore } from 'pinia'
-import SignInForm from '../components/SignUpForm.vue'
-// import userStore from '../stores/user.js'
+import SignOut from '../components/SignOut.vue';
+import TaskColumn from '../components/TaskColumn.vue';
+import NewTask from '../components/NewTask.vue';
 
 export default {
     components: {
-        SignInForm,
+        SignOut,
+        TaskColumn,
+        NewTask,
     },
     computed: {
         // ...mapStore(userStore),
     },
-    methods: {
-        login() {
-            this.userStore.signUp()
-        }
-    }
 }
 </script>
+
+<style>
+</style>

@@ -21,5 +21,17 @@ export default defineStore("tasks", {
 
       this.tasks = tasks;
     },
+
+    async showTasks() {
+      const { data, error} = await supabase
+
+      .from("tasks")
+
+      .select("*")
+
+      if (error) throw error;
+      if (data) this.task = data.task; 
+      console.log(data);
+    },
   },
 });
