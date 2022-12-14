@@ -20,21 +20,24 @@ export default defineStore("tasks", {
         .order("id", { ascending: false });
 
       this.tasks = tasks;
-      console.log("Tareas del JS", this.tasks);
+
     },
-    // async showTasks() {
-    //   const { data, error } = await supabase
+    
+    async createNewTask(title, description, user_id) {
+      const { data: tasks } = await supabase
 
-    //   .from("tasks")
+      .from("tasks")
+      .insert({title: title, description: description, user_id: user_id})
+      this.fetchTasks();
+    },
 
-    //   .select("*")
+    async editTask (title, description, id) {
+      const { data: tasks } = await supabase
 
-    //   if (data.task) 
-    //     this.task = data.task;
-    //   if (error) 
-    //     throw error;
-      
-    //   console.log(data);
-    // }
+      .from("tasks")
+      .update({title: title, description: description})
+      .eq("id", id)
+      this.fetchTasks();
+    }
   },
 });
