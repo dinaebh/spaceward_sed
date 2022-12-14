@@ -20,18 +20,21 @@ export default defineStore("tasks", {
         .order("id", { ascending: false });
 
       this.tasks = tasks;
+      console.log("Tareas del JS", this.tasks);
     },
+    // async showTasks() {
+    //   const { data, error } = await supabase
 
-    async showTasks() {
-      const { data, error} = await supabase
+    //   .from("tasks")
 
-      .from("tasks")
+    //   .select("*")
 
-      .select("*")
-
-      if (error) throw error;
-      if (data) this.task = data.task; 
-      console.log(data);
-    },
+    //   if (data.task) 
+    //     this.task = data.task;
+    //   if (error) 
+    //     throw error;
+      
+    //   console.log(data);
+    // }
   },
 });

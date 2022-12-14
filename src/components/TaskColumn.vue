@@ -1,7 +1,7 @@
 <template>
     <h1>To Do List</h1>
-    <button type="button" @click.prevent="tasksStore.fetchTasks()">Fetch</button>
-    <!-- <div v-for="task of tasksStore.fetchTasks()"> {{task}}</div> -->
+    <button type="button" @click.prevent="showTasks()">Update Tasks</button>
+    <!-- <div v-for="task of tasksStore"> {{task}}</div> -->
 </template>
 
 
@@ -15,11 +15,9 @@ export default {
   },
 
   methods: {
-    fetchTasks() {
-    const tasks = this.tasksStore.fetchTasks();
-    for (let task of tasks) {
-        console.log(task);
-    }
+    async showTasks() {
+    const fetchTasks = await this.tasksStore.fetchTasks();
+    console.log(fetchTasks);
 }
   }
 }
