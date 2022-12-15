@@ -70,11 +70,11 @@ export default defineStore("tasks", {
       this.fetchTasks();
     },
 
-    async moveToDoing(status, id) {
+    async changeStatus(status, id) {
       const { data: tasks } = await supabase
 
         .from("tasks")
-        .select(status)
+        .update({status: status})
         .eq("id", id);
       this.fetchTasks();
     },
