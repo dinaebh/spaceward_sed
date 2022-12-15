@@ -103,6 +103,18 @@ export default {
 .tasks-columns {
   display: flex;
   justify-content: space-around;
+  background-color:#031d36;
+  padding: 20px;
+}
+
+h1 {
+  background-color: #ebb0a2;
+  text-align: center;
+  font-weight: 800;
+  color: #174e78;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 h2 {
@@ -113,7 +125,7 @@ h2 {
 
 .column {
   width: 30%;
-  background-color: #dacff5;
+  background-color: #ebb0a2;
   padding: 10px;
   border-radius: 25px;
 }

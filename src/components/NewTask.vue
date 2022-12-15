@@ -39,6 +39,6 @@ export default {
 .new-task-form {
   padding: 10px;
   border-radius: 20px;
-  background-color: #ccbbfc;
+  background-color: #ec927f;
 }
 </style>

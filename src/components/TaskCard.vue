@@ -148,11 +148,12 @@ button {
 }
 
 .task {
-  background-color: #4a2b6f;
+  background-color: #174e78;
   color: white;
   padding: 15px;
   margin: 5px;
   border-radius: 20px;
+  border-bottom: 10px solid #37baee;
 }
 
 </style>
