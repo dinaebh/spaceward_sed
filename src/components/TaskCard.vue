@@ -35,7 +35,7 @@
                 />
               </svg>
             </button>
-            <button type="button" @click="moveToDoing(task.status, task.id)">Doing</button>
+            <button type="button" @click="task.status == '2'">Doing</button>
           </div>
 
           <div v-if="!editing">
@@ -146,11 +146,12 @@ button {
 }
 
 .task {
-  background-color: #4a2b6f;
+  background-color: #174e78;
   color: white;
   padding: 15px;
   margin: 5px;
   border-radius: 20px;
+  border-bottom: 10px solid #37baee;
 }
 
 </style>
