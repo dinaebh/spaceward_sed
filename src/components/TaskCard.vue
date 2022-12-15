@@ -35,7 +35,10 @@
                 />
               </svg>
             </button>
-            <button type="button" @click="moveToDoing(task.status, task.id)">Doing</button>
+            <div>Move:</div>
+            <button type="button" @click="changeStatus(1, task.id)">To-do</button>
+            <button type="button" @click="changeStatus(2, task.id)">Doing</button>
+            <button type="button" @click="changeStatus(3, task.id)">Done</button>
           </div>
 
           <div v-if="!editing">
@@ -108,9 +111,8 @@ export default {
       this.tasksStore.deleteTask(taskid);
     },
 
-    moveToDoing(taskstatus, taskid) {
-        this.status = 2;
-        this.tasksStore.moveToDoing(taskstatus, taskid)
+    changeStatus(taskstatus, taskid) {
+        this.tasksStore.changeStatus(taskstatus, taskid)
 
     }
 
