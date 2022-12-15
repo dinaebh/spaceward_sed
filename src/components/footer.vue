@@ -1,15 +1,14 @@
 <template>
-    <!-- subfooter -->
+     <!-- subfooter -->
+   <footer style="background: linear-gradient(135deg, #F97794 10%, #623AA2 100%)">
+    
   <a href="#"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-yxwia&psig=AOvVaw0uHo2VVGnEUGbospjGzwWO&ust=1671215216860000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMjS5Pyf_PsCFQAAAAAdAAAAABAJ" alt="logo"></a> 
-  <div class="links">
-  <div>
-  <a href="#"></a>
-  </div>
-  <a href=""></a>
-  </div>
+
+
+
   <!-- footer -->
   <div>
-  <ul>
+  <ul style="list-style:none;" class="d-flex justify-content-between " >
   <li><a href="#"> Privacy Policy</a></li>
   <li><a href="#"> Terms</a></li>
     <li><a href="#"> Cookies Settings </a></li>
@@ -37,12 +36,21 @@
   <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
 </svg></a>
 </li>
-
   </ul>
   </div>
+</footer>
 </template>
 
 <script>
 </script>
 <style scoped>
+ul{
+
+
+}
 </style>
+
+// Pendent a importar a SingUpScreen vue i LoginScrceen
+// // import Footer from "../components/Footer.vue";
+// // <Footer/>
+// // Footer
