@@ -69,5 +69,14 @@ export default defineStore("tasks", {
         .eq("id", id);
       this.fetchTasks();
     },
+
+    async moveToDoing(status, id) {
+      const { data: tasks } = await supabase
+
+        .from("tasks")
+        .select(status)
+        .eq("id", id);
+      this.fetchTasks();
+    },
   },
 });
