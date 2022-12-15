@@ -9,6 +9,12 @@ export default defineStore("user", {
     };
   },
 
+  getters: {
+    isLoggedIn() {
+      return this.user !== null;
+    }
+  },
+
   actions: {
     async fetchUser() {
       const user = await supabase.auth.user();
@@ -60,7 +66,8 @@ export default defineStore("user", {
       const { error } = await supabase.auth.signOut()
       if (error) {
         throw error
-      } else {
+      } else { 
+        this.user = null;
         this.$router.push ("/loginscreen")
       }
       

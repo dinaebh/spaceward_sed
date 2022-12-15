@@ -1,11 +1,12 @@
 <template>
-  <input type="text" placeholder="Enter task title" v-model="task.taskTitle" />
-  <input
+  <div class="new-task-form"><input type="text" placeholder="Enter task title" v-model="task.taskTitle" />
+  <textarea
     type="text"
     placeholder="Enter task description"
     v-model="task.taskDescription"
-  />
-  <button type="button" @click.prevent="createNewTask()">Create task</button>
+  ></textarea>
+  <br><button type="button" @click.prevent="createNewTask()">Create task</button>
+ </div>
 </template>
 
 <script>
@@ -35,5 +36,9 @@ export default {
 </script>
 
 <style scoped>
-
+.new-task-form {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #ccbbfc;
+}
 </style>
