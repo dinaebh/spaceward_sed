@@ -13,7 +13,6 @@ export default defineStore("tasks", {
     toDoTasks() {
       const filtered1 = this.tasks.filter((task) => 
       task.status == 1)
-      console.log(filtered1);
       return filtered1;
     },
 
@@ -76,6 +75,8 @@ export default defineStore("tasks", {
         .from("tasks")
         .update({status: status})
         .eq("id", id);
+
+        
       this.fetchTasks();
     },
   },
