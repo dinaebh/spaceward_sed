@@ -30,6 +30,8 @@ export default {
   methods: {
     createNewTask() {
       this.tasksStore.createNewTask(this.task.taskTitle, this.task.taskDescription, this.userStore.user.id);
+      this.task.taskTitle ="";
+      this.task.taskDescription ="";
     },
   },
 };

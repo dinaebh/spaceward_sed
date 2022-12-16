@@ -10,9 +10,9 @@
               <i class="fa-solid fa-trash"></i>
             </button>
             <div>Move:</div>
-            <button type="button" @click="changeStatus(1, task.id)">To-do</button>
-            <button type="button" @click="changeStatus(2, task.id)">Doing</button>
-            <button type="button" @click="changeStatus(3, task.id)">Done</button>
+            <button v-show="task.status !== 1" type="button" @click="changeStatus(1, task.id)">To-do</button>
+            <button v-show="task.status !== 2" type="button" @click="changeStatus(2, task.id)">Doing</button>
+            <button v-show="task.status !== 3" type="button" @click="changeStatus(3, task.id)">Done</button>
           </div>
 
           <div v-if="!editing">
