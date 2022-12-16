@@ -105,6 +105,7 @@ export default {
   justify-content: space-around;
   background-color:#031d36;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 h1 {
