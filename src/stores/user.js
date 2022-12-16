@@ -42,6 +42,22 @@ export default defineStore("user", {
       this.user_id = response.data.user.id;
     },
 
+    async passwordReset(email){
+
+      // const { data, error } = await supabase.auth.api.resetPasswordForEmail(
+      //   email, 
+        
+      // )
+      const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
+        redirectTo: '/recoverpassword',
+      })
+      if (error)
+      throw error;
+      if (data)
+        this.user=data.user;
+    },
+
+    
     async logIn(email, password) {
       const response = await supabase.auth.signInWithPassword({
         email: email,

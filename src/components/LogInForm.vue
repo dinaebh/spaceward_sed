@@ -28,6 +28,7 @@
       </div>
       <button type="submit" class="btn btn-primary">SignIn</button>
     </form>
+    <RouterLink to="/recoverpassword"> Did you forgot your password?</RouterLink>
   </template>
   
   <script>
@@ -50,6 +51,7 @@
       logInCall() {
         this.userStore.logIn(this.email, this.password);
       },
+    
     },
   };
   </script>

@@ -3,6 +3,8 @@ import DashBoard from "../views/Dashboard.vue";
 import LogInScreen from "../views/LogInScreen.vue";
 import SignUpScreen from "../views/SignUpScreen.vue";
 import useUserStore from "../stores/user";
+import PasswordReset from "../views/PasswordScreen.vue";
+import NewPassword from "../views/NewPassword.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +24,17 @@ const router = createRouter({
       name: "signup",
       component: SignUpScreen,
     },
+    {
+      path: "/recoverpassword",
+      name: "recoverpassword",
+      component: PasswordReset,
+    },
+    {
+      path: "/newpassword",
+      name: "newpassword",
+      component: NewPassword,
+    },
+
 
   ],
 }

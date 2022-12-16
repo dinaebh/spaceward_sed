@@ -1,6 +1,8 @@
 <template>
 <LogInForm />
+
 <Footer/>
+
 </template>
 
 
@@ -8,10 +10,12 @@
 import LogInForm from "../components/LogInForm.vue";
 import Footer from "../components/Footer.vue";
 
+
 export default {
     components: {
         LogInForm,
         Footer,
+        
     }
 }
 </script>
