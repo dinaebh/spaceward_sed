@@ -1,6 +1,6 @@
 <template>
 <LogInForm />
-<Footer/>
+<Footer />
 </template>
 
 

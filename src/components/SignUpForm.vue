@@ -1,6 +1,14 @@
 <template>
   <form class="container" @submit.prevent="signUpCall()">
     <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name or Nickname</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        v-model="name"
+      />
       <label for="exampleInputEmail1" class="form-label">Email address</label>
       <input
         type="email"
@@ -39,6 +47,7 @@ export default {
     return {
       password: "",
       email: "",
+      name:"",
     };
   },
 
@@ -48,8 +57,19 @@ export default {
 
   methods: {
     signUpCall() {
-      this.userStore.signUp(this.email, this.password);
+      this.userStore.signUp(this.name, this.email, this.password);
     },
   },
 };
 </script>
+
+<style scoped>
+*{
+  background-color: #10052B;
+
+}
+
+label{
+  color: antiquewhite;
+}
+</style>
