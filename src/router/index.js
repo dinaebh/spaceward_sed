@@ -3,6 +3,7 @@ import DashBoard from "../views/Dashboard.vue";
 import LogInScreen from "../views/LogInScreen.vue";
 import SignUpScreen from "../views/SignUpScreen.vue";
 import useUserStore from "../stores/user";
+import UserScreen from "../views/UserScreen.vue"
 import PasswordReset from "../views/PasswordScreen.vue";
 import NewPassword from "../views/NewPassword.vue"
 
@@ -23,6 +24,11 @@ const router = createRouter({
       path: "/signupscreen",
       name: "signup",
       component: SignUpScreen,
+    },
+    {
+      path: "/userscreen",
+      name: "userscreen",
+      component:UserScreen,
     },
     {
       path: "/recoverpassword",

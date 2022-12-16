@@ -6,6 +6,7 @@ export default defineStore("user", {
   state() {
     return {
       user: null,
+      userm: null,
     };
   },
 
@@ -21,14 +22,34 @@ export default defineStore("user", {
       this.user = user;
     },
 
-    async signUp(email, password) {
+    async fetchUserMeta() {
+      const { data: users } = await supabase
+
+        .from("")
+
+        .select("*")
+
+        .order("id", { ascending: false });
+
+      this.userm = users;
+    },
+
+    async signUp(name, email, password) {
       const response = await supabase.auth.signUp({
         email: email,
         password: password,
+        options:{
+          data:{
+            name_nickname: name,
+
+
+          }
+        }
         
       });
 
       
+
       const data = response.data;
       const error = response.error;
       if (error) {
@@ -40,6 +61,7 @@ export default defineStore("user", {
         return this.$router.push ("/loginscreen")
       };
       this.user_id = response.data.user.id;
+      
     },
 
     async passwordReset(email){
