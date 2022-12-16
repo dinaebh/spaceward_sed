@@ -1,6 +1,14 @@
 <template>
 <SignOutForm />
-<Footer/>
+
+
+  <div>
+  <p>Already registered?</p>
+    <RouterLink to="/loginscreen"> <button type="button" class="btn btn-outline-primary">Log In</button></RouterLink>
+  </div>
+  
+  <!-- <button @click="$router.push()"></button> -->
+  <Footer/>
 </template>
 
 
