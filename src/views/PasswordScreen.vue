@@ -1,14 +1,17 @@
 <template>
-    <PasswordReset/>
+  <NewPassword />
+  <Footer/>
 </template>
 <script>
-import PasswordReset from "../components/PasswordReset.vue"
+import NewPassword from "../components/NewPassword.vue";
+import Footer from "../components/Footer.vue";
 export default {
-    components:{
-        PasswordReset,
-    }
-    
-}
+  components: {
+    NewPassword,
+    Footer,
+  },
+};
 </script>
 
-<style></style>
+<style scoped>
+</style>

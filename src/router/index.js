@@ -4,8 +4,8 @@ import LogInScreen from "../views/LogInScreen.vue";
 import SignUpScreen from "../views/SignUpScreen.vue";
 import useUserStore from "../stores/user";
 import UserScreen from "../views/UserScreen.vue"
-import PasswordReset from "../views/PasswordScreen.vue";
-import NewPassword from "../views/RecoverScreen.vue";
+import PasswordReset from "../views/RecoverScreen.vue";
+import NewPassword from "../views/PasswordScreen.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
