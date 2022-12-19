@@ -48,6 +48,7 @@ export default {
   border-radius: 5px;
   padding: auto;
   font-size: 0,5 em;
+  font-weight: lighter;
   margin-bottom: 5px;
   border-color: rgb(103, 103, 104);
   border-style: none;
@@ -57,7 +58,7 @@ export default {
   padding: 10px;
   border-radius: 10px;
   background-color: white;
-  color:12062F;
+  color:#12062F;
   border-style: hidden;
 }
 input{
