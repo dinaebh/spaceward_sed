@@ -145,7 +145,7 @@ h2 {
   border-radius: 20px;
   padding:4px;
   font-weight: lighter;
-  /* width:180px; */
+  width:100%;
   align-self: center;
   
 

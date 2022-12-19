@@ -1,7 +1,9 @@
 <template>
+  
   <form class="container" @submit.prevent="logInCall()">
+    <h1>Log in</h1>
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <label for="exampleInputEmail1" class="form-label" id="inputemail">Email address</label>
       <input
         type="email"
         class="form-control"
@@ -26,11 +28,13 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1" />
       <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>
-    <button type="submit" class="btn btn-primary">SignIn</button>
+    <button type="submit" class="btn btn-primary">Log In</button>
+
+    <div class="forgotpassword"><RouterLink to="/recoverpassword" class="text-decoration-none" >
+    Forgot your password?</RouterLink>
+    </div>
   </form>
-  <RouterLink to="/recoverpassword" class="text-decoration-none">
-    Forgot your password?</RouterLink
-  >
+ 
 </template>
 
 <script>
@@ -56,3 +60,26 @@ export default {
   },
 };
 </script>
+<style scoped>
+h1{
+  color: white;
+  margin-bottom:20px;
+  
+}
+#inputemail{
+  border-color: #b92bdb;
+}
+input {
+  background-color: #12062F;
+  border-color: #b92bdb;
+  
+}
+label{
+  color:white;
+}
+.forgotpassword{
+  float:right;
+  margin-right: 25px;
+}
+
+</style>
