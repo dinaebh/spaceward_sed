@@ -38,7 +38,7 @@ button{
   background-color: #e96879;
   color:#12062F;
   backdrop-filter: blur(8px);
-  box-shadow: -1px -1px 10px #e96879;
+  box-shadow: -1px -1px 5px #e96879;
   
 }
 </style>

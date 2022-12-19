@@ -45,15 +45,25 @@ export default {
   
 }
 .inputlabel{
-  border-radius: 10px;
+  border-radius: 5px;
   padding: auto;
-  font-size: 1em;
+  font-size: 0,5 em;
   margin-bottom: 5px;
+  border-color: rgb(103, 103, 104);
+  border-style: none;
+  width:95%;
 }
 .createtask{ 
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: white;
   color:12062F;
+  border-style: hidden;
+}
+input{
+  border-style: outset;
+}
+textarea{
+  border-style: none;
 }
 </style>
