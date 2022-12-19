@@ -4,6 +4,9 @@ import LogInScreen from "../views/LogInScreen.vue";
 import SignUpScreen from "../views/SignUpScreen.vue";
 import useUserStore from "../stores/user";
 import UserScreen from "../views/UserScreen.vue"
+import PasswordReset from "../views/RecoverScreen.vue";
+import NewPassword from "../views/PasswordScreen.vue";
+import LandingPage from "../views/LandingPage.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,7 +31,23 @@ const router = createRouter({
       name: "userscreen",
       component:UserScreen,
     },
-    
+    //page to type email and get an email
+    {
+      path: "/recoverpassword",
+      name: "recoverpassword",
+      component: PasswordReset,
+    },
+    //page to insert your new password
+    {
+      path: "/newpassword",
+      name: "newpassword",
+      component: NewPassword,
+    },
+    {
+      path: "/landingpage",
+      name: "landingpage",
+      component: LandingPage,
+    },
 
   ],
 }

@@ -64,6 +64,18 @@ export default defineStore("user", {
       
     },
 
+    async passwordReset(email){
+
+      const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
+        redirectTo: '/newpassword',
+      })
+      if (error)
+      throw error;
+      if (data)
+        this.user=data.user;
+    },
+
+    
     async logIn(email, password) {
       const response = await supabase.auth.signInWithPassword({
         email: email,
@@ -81,6 +93,27 @@ export default defineStore("user", {
         this.user = data.user
       this.$router.push("/")
     };
+      
+    },
+    // com li dic que password d'abans es canvia per l'actual?
+  
+    async logInWithNewPassword(email, passwordUpdated) {
+   const response = await supabase.auth.signInWithPassword({
+   email: email,
+    password:passwordUpdated,
+        
+     });
+    
+   const data = response.data;
+   const error = response.error;
+
+    if (error) {
+    return alert(error);
+    }
+   if (data) {
+   this.user = data.user
+   this.$router.push("/")
+     };
       
     },
 
