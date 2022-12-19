@@ -1,11 +1,11 @@
 <template>
-  <div class="new-task-form"><input type="text" placeholder="Enter task title" v-model="task.taskTitle" />
+  <div class="new-task-form"><input type="text" placeholder="Enter task title" class="inputlabel" v-model="task.taskTitle" />
   <textarea
     type="text"
-    placeholder="Enter task description"
+    placeholder="Enter task description" class="inputlabel"
     v-model="task.taskDescription"
   ></textarea>
-  <br><button type="button" @click.prevent="createNewTask()">Create task</button>
+  <br><button type="button" @click.prevent="createNewTask()" class="createtask">Create task</button>
  </div>
 </template>
 
@@ -41,6 +41,19 @@ export default {
 .new-task-form {
   padding: 10px;
   border-radius: 20px;
-  background-color: #ec927f;
+  background-color: #C5BBD9;
+  
+}
+.inputlabel{
+  border-radius: 10px;
+  padding: auto;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+.createtask{ 
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  color:12062F;
 }
 </style>
