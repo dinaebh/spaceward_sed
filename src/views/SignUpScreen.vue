@@ -8,7 +8,7 @@
   </div>
   
   <!-- <button @click="$router.push()"></button> -->
-  <Footer/>
+  <Footer />
 </template>
 
 
