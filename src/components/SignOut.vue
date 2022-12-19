@@ -1,5 +1,5 @@
 <template>
-    <button type="button" @click.prevent="logOut()">Log Out</button>
+    <button type="button" @click.prevent="logOut()" class="effectLogout" >Log Out</button>
 
 </template>
 
@@ -20,3 +20,25 @@ export default {
 }
 
 </script>
+<style scoped>
+button{
+  color:#e96879;
+  border:none;
+  background-color: transparent;
+  box-shadow: 0px 0px 20px #e96879;
+  border-radius: 1px;
+  padding:7px;
+  margin-top: 10px;
+  
+
+  
+
+}
+.effectLogout:hover{
+  background-color: #e96879;
+  color:#12062F;
+  backdrop-filter: blur(8px);
+  box-shadow: -1px -1px 10px #e96879;
+  
+}
+</style>

@@ -17,10 +17,10 @@
 
           <div v-if="!editing">
             <div>
-              <h3>{{ task.title }}</h3>
+              <h4>{{ task.title }}</h4>
             </div>
             <div>
-              <h4>{{ task.description }}</h4>
+              <h6>{{ task.description }}</h6>
             </div>
           </div>
           <div v-else="editing">
@@ -101,12 +101,13 @@ export default {
 
 <style scoped>
 
-h3 {
-  color: #ebb0a2;
+h4 {
+  color: #ffffff;
+  
 }
 
-h4 {
-  color: #dacff5;
+h6 {
+  color: #ffffff;
 }
 
 .edit-delete-buttons {
@@ -122,12 +123,12 @@ button {
 }
 
 .task {
-  background-color: #174e78;
+  background-color: #12062F;
   color: white;
   padding: 15px;
   margin: 5px;
   border-radius: 20px;
-  border-bottom: 10px solid #37baee;
+  border-bottom: 10px solid #23173e;
   flex-wrap: wrap;
 }
 
