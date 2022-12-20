@@ -66,7 +66,8 @@
 
  
 }
-ul{
+
+ul {
   padding: 0;
   
 }

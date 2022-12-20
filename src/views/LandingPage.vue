@@ -1,7 +1,16 @@
 <template>
-    <div class="top-nav">
-        <a href="#log-in" class="login-button">Log In</a>
-    </div>
+    <LandingNav />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#ffffff" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,90.7C384,117,480,203,576,250.7C672,299,768,309,864,277.3C960,245,1056,171,1152,149.3C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+    <header class="header-background">
+      
+    </header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#ffffff" fill-opacity="1" d="M0,64L60,69.3C120,75,240,85,360,80C480,75,600,53,720,85.3C840,117,960,203,1080,218.7C1200,235,1320,181,1380,154.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+</svg>
+
+
   <div class="astronaut-img-and-description">
     <div class="what-is-spaceward">
       <div>
@@ -68,17 +77,21 @@
   <div id="log-in">
     <LogInForm />
 </div>
-  <AppFooter /> 
+<div class="space-footer">
+  <AppFooter />
+  </div>
 </template>
 
 <script>
 import AppFooter from "../components/AppFooter.vue";
 import LogInForm from "../components/LogInForm.vue";
+import LandingNav from "../components/LandingNav.vue";
 
 export default {
   components: {
     AppFooter,
     LogInForm,
+    LandingNav,
   },
 };
 </script>
@@ -88,11 +101,11 @@ export default {
 h2 {
   color: white;
   border-bottom: 1px solid white;
-  width: 50vw;
+  width: 60vw;
   font-size: 40px;
   line-height: 80%;
   letter-spacing: 5px;
-  margin-left: 15%;
+  margin-left: 10%;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
@@ -122,34 +135,15 @@ h2 {
   margin-right: auto;
 }
 
-#log-in {
-    padding: 50px;
+.space-footer {
+  margin-top: 300px;
 }
 
-.top-nav {
-    padding: 10px;
-    margin-top: 5px;
-    display: flex;
-    justify-content: end;
+.header-background {
+  background-color: white;
+  width: 100vw;
+  height: 200px;
 }
-
-.login-button {
-    color: white;
-    padding: 8px;
-    border: 1px solid white;
-    text-decoration: none;
-}
-
-.login-button a:visited, a:link {
-    color: white;
-    text-decoration: none;
-}
-
-
-
-
-
-
 
 
 
