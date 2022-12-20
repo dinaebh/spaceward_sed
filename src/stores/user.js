@@ -6,7 +6,7 @@ export default defineStore("user", {
   state() {
     return {
       user: null,
-      userm: null,
+     
     };
   },
 
@@ -22,41 +22,26 @@ export default defineStore("user", {
       this.user = user;
     },
 
-    async fetchUserMeta() {
-      const { data: users } = await supabase
-
-        .from("")
-
-        .select("*")
-
-        .order("id", { ascending: false });
-
-      this.userm = users;
-    },
-
-    async signUp(name, email, password) {
+    async signUp(name, lastname, email, password) {
       const response = await supabase.auth.signUp({
         email: email,
         password: password,
         options:{
           data:{
-            name_nickname: name,
-
-
+            first_name: name,
+            last_name: lastname,
           }
         }
         
       });
-
-      
-
       const data = response.data;
       const error = response.error;
       if (error) {
-        console.log(error);
+        
         return alert(error);
       };
       if (data.user) {
+        console.log(data);
         this.user = data.user;
         return this.$router.push ("/loginscreen")
       };
@@ -90,6 +75,7 @@ export default defineStore("user", {
       return alert(error);
     }
       if (data) {
+        console.log("hola", data)
         this.user = data.user
       this.$router.push("/")
     };
@@ -127,6 +113,20 @@ export default defineStore("user", {
       }
       
     },
+
+    async updateProfile(first_name, last_name, avatar_url){
+      const {error} = await supabase.from("profiles").upsert(first_name, last_name, avatar_url, {returning: "minimal"});
+    if(error) throw error
+  },
+
+    async handleImageUpload(path){
+      avatar_url.value = path;
+      await updateProfile({first_name, last_name, avatar_url: path})
+    },
+
+
+
+  
 
   },
 
