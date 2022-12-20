@@ -1,7 +1,7 @@
 <template>
-<LogInForm id="app-loginform" />
-
-<AppFooter id="app-footer" />
+<div class="app-footer">
+    <AppFooter />
+</div>
 
 </template>
 

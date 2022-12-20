@@ -6,21 +6,22 @@
     <input type="email" id="email" class="form__input" placeholder=" " v-model="email">
     <label for="email" class="form__label">Email</label>
   </div>
-  <div class="we-never-share-txt">
-        We'll never share your email with anyone else.
-      </div>
   <div class="form">
     <input type="password" id="password" class="form__input" placeholder=" " v-model="password">
     <label for="email" class="form__label">Password</label>
   </div>
-  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  <div class="check-box-remember-me"><input type="checkbox" class="check-box" />
+  <label class="txt-remember-me">Remember Me</label></div>
   <br>
-  <button type="submit" class="btn btn-primary">Log In</button>
-</form>
-  <RouterLink to="/recoverpassword" class="text-decoration-none">
+  <div class="login-button-and-singup">
+    <button type="submit" class="login-button">Log In</button>
+    <a class="sign-up-link" href="/signupscreen">Sign Up</a>
+  <RouterLink to="/recoverpassword" class="forgot-password-link">
     Forgot your password?
   </RouterLink>
+</div>
+</form>
+  
   </div>
   
 </body>
@@ -96,7 +97,7 @@ export default {
 }
 
 body {
-  font-family: "Convergence", sans-serif;
+  font-family: 'Poppins', sans-serif;
   height: 1vh;
   display: grid;
   justify-content: center;
@@ -107,8 +108,9 @@ body {
 
 .form {
   position: relative;
-  width: 20rem;
-  height: 3rem;
+  width: 15rem;
+  height: 2.8rem;
+  margin-bottom: 10px;
 }
   .form__input {
     position: absolute;
@@ -119,21 +121,23 @@ body {
     border: 2px solid #e1e5ee;
     border-radius: 0.5rem;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 13px;
     color: white;
     outline: none;
     padding: 1.25rem;
     background: none;
+    transition: 1s;
   }
 
-  form:hover {
-      border-color: #adffff;
+  .form__input:hover {
+      border-color: rgb(120, 216, 211);
     }
 
     /* Change border when input focus*/
 
-    form:focus {
-      border-color: #18ffff;
+    .form__input:focus {
+      border-color: #00cccc;
+      color: rgba(0, 225, 255, 0.342);
     }
 
     .form__label {
@@ -144,7 +148,8 @@ body {
     color: white;
     cursor: text;
     transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-    background-color: #190c3e;
+    background-color: #190c3d;
+    border-radius: 50px;
   }
 
 
@@ -153,7 +158,7 @@ body {
   top: -0.5rem;
   font-size: 0.8rem;
   left: 0.8rem;
-  color: teal;
+  color: rgb(74, 10, 177);;
 }
 
 .we-never-share-txt {
@@ -163,7 +168,58 @@ body {
   margin-left: 5px;
 }
 
+.forgot-password-link {
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.check-box-remember-me {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
+}
+
+.txt-remember-me {
+  color: white;
+  font-size: 10px;
+  margin-left: 2px;
+  text-transform: uppercase;
+  transition: 1s;
+}
+
+.txt-remember-me:hover {
+  color: rgb(201, 4, 142);
+}
+
+.check-box {
+  width: 15px;
+}
+
 .cool-form {
-  background-color: red;
+  padding: 20px;
+}
+
+.login-button {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+.login-button:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+
+.login-button-and-signup {
+
 }
 </style>

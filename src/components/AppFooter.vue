@@ -50,7 +50,7 @@
 
 </script>
 <style scoped>
-footer{
+footer {
   margin-top:40px;
   padding: 5px;
   display:flex;
@@ -58,8 +58,10 @@ footer{
   align-items: center;
   font-weight: lighter;
   font-size: 0,6em;
+  background-color: none;
 }
-ul{
+
+ul {
   padding: 0;
   
 }
