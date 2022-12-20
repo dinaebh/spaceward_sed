@@ -62,7 +62,7 @@ router.beforeEach(async function(param) {
     return "/";
   }
   if (!isLoggedIn && param.name === "dashboard") {
-    return "/loginscreen";
+    return "/landingpage";
   }
 })
 export default router;

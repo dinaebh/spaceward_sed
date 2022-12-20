@@ -165,10 +165,19 @@ h2 {
 .newtaskbutton{
   border-style: none;
   color: #12062F;
-  border-radius: 100px;
+  border-radius: 15px;
   font-weight: bold;
   width:100%;
   font-size:1.5em;
   background-color: #9B91B0;
+}
+
+@media (min-width: 765px) { 
+  .tasks-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
 }
 </style>

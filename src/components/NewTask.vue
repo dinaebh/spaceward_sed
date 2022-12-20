@@ -61,6 +61,10 @@ export default {
   color:#12062F;
   border-style: hidden;
 }
+.createtask:hover{
+  background-color: #12062F;
+  color:white;
+}
 input{
   border-style: outset;
 }
