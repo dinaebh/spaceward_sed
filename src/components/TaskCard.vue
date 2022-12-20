@@ -1,23 +1,29 @@
 <template>
+   <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
 
     <div class="task">
 
+        <div class="task-general-buttons">
         <div class="edit-delete-buttons">
             <button type="button" @click="editTask(task.title, task.description, task.id)">
-              <i class="fa-solid fa-pen-to-square"></i>
+              <i class='fas fa-pencil-alt'></i>
             </button>
             <button type="button" @click="deleteTask(task.id)">
               <i class="fa-solid fa-trash"></i>
             </button>
-            <div>Move:</div>
-            <button v-show="task.status !== 1" type="button" @click="changeStatus(1, task.id)">To-do</button>
-            <button v-show="task.status !== 2" type="button" @click="changeStatus(2, task.id)">Doing</button>
-            <button v-show="task.status !== 3" type="button" @click="changeStatus(3, task.id)">Done</button>
           </div>
+            <div class="movetoButtons">
+            Move:
+            <button v-show="task.status !== 1" type="button" @click="changeStatus(1, task.id)"><i class='fa fa-spinner'></i></button>
+            <button v-show="task.status !== 2" type="button" @click="changeStatus(2, task.id)"><i class='fas fa-rocket'></i></button>
+            <button v-show="task.status !== 3" type="button" @click="changeStatus(3, task.id)"><i class='fa fa-flag'></i> </button>
+          </div></div>
 
           <div v-if="!editing" >
             <div>
-              <h4>{{ task.title }}</h4>
+              <h5>{{ task.title }}</h5>
             </div>
             <div>
               <h6>{{ task.description }}</h6>
@@ -30,12 +36,12 @@
               v-model="task.description"
               :disabled="!editing"
             ></textarea>
-            <div>
+            <div class="save-cancel-button">
               <button
                 type="submit"
                 @click.prevent="editTask(task.title, task.description, task.id)"
               >
-                {{ editing ? "save" : "edit" }}
+                {{ editing ? "Save" : "edit" }}
               </button>
               <button type="button" @click="editing = false">Cancel</button>
             </div>
@@ -101,7 +107,11 @@ export default {
 
 <style scoped>
 
-h4 {
+*{
+  font-family: Manrope;
+}
+
+h5 {
   color: #ffffff;
   margin-top: 10px;
   
@@ -112,26 +122,76 @@ h6 {
   font-weight: 100;
 }
 
+.task-general-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  height:30px;
+  
+}
 .edit-delete-buttons {
   display: flex;
   justify-content: space-around;
   gap: 10px;
+ 
+} 
+.movetoButtons{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
 }
-
 button {
   border-radius: 25px;
-  background-color: #dacff5;
-  color: #4a2b6f;
+  background-color: #190c3d;
+  color: #b92bdb;
+  border-color: #b92bdb;
+  width:80%;
 }
 
 .task {
-  background-color: #12062F;
+  background-color: #190c3d;
   color: white;
   padding: 15px;
   margin: 5px;
   border-radius: 20px;
   /* border-bottom: 10px solid #23173e; */
   flex-wrap: wrap;
+  box-sizing: border-box;
+  
+}
+textarea{
+ border-style:none;
+  color:white;
+ border:2px;
+ border-radius: 3px;
+width:100%;
+background: #190c3d;
+  box-shadow:0px 00px 3px #b92bdb;
+ /* box-sizing: border-box; */
+}
+input{
+  border-style:none;
+  background-color: #190c3d;
+  color:white;
+  margin-top:10px;
+margin-bottom:4px;
+  box-shadow:0px 00px 3px #b92bdb;
+ border-radius: 3px;
+ width:100%;
+ 
+}
+.save-cancel-button{
+  display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+width:50%;
+gap:10px;
 }
 
+@media (min-width: 765px) { 
+  .movetoButtons{
+    display:none;
+  }
+}
 </style>

@@ -2,7 +2,7 @@
      <!-- subfooter -->
      <!-- style="background: linear-gradient(135deg, #F97794 10%, #623AA2 100%)" class="d-flex flex-direction-row justify-content-space-between" -->
    <footer>
-    
+   <div id="footerDiv"> 
   <a href="#"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-yxwia&psig=AOvVaw0uHo2VVGnEUGbospjGzwWO&ust=1671215216860000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMjS5Pyf_PsCFQAAAAAdAAAAABAJ" alt="logo"></a> 
 
 
@@ -42,7 +42,7 @@
 </svg></a>
 </li>
   </ul>
-  </div>
+  </div> </div> 
 </footer>
 </template>
 
@@ -50,15 +50,21 @@
 
 </script>
 <style scoped>
-footer {
+#footerDiv{
   margin-top:40px;
   padding: 5px;
   display:flex;
   flex-direction:column;
   align-items: center;
   font-weight: lighter;
-  font-size: 0,6em;
-  background-color: none;
+  font-size: 0,4em;
+  position:fixed;
+  width:100%;
+  bottom:0;
+  height:150px;
+  
+
+ 
 }
 
 ul {
@@ -91,13 +97,14 @@ a:hover{
   color:#e96879;
 }
 @media (min-width: 765px) {
-  footer{
+  #footerDiv{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     align-content:center;
-    width:100%;
-    
+   margin-bottom:15px;
+   padding-top: 60px;;
+  height:60px;
   
     
   }
@@ -111,6 +118,7 @@ a:hover{
    
     justify-content: space-around;
   }
+  
 }
 </style>
 

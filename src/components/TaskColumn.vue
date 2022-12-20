@@ -2,13 +2,19 @@
   <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+  <div id="floating-iconos">
+  <div clas="float-space"></div>
+ <div clas="float-rocket"><i class='fas fa-rocket'></i></div>
+ <div clas="float-flag"><i class='fa fa-flag'></i><i class='fa fa-spinner'></i></div>
+</div>
   <h1>Final Project</h1>
   
 
-  <!--columna uno-->
+ 
   <div class="tasks-columns">
+   <!--columna uno-->
     <div class="column" @drop="onDrop($event, 1)" @dragover.prevent @dragenter.prevent>
-      <div><h2>TO DO</h2></div>
+      <h2>TO DO</h2>
 
       <div class="task" v-for="(task, index) of tasksStore.toDoTasks" :key="index" draggable @dragstart="startDrag($event, task)">
         
@@ -121,11 +127,12 @@ export default {
   
   background-color:#C5BBD9 ;
   /* background-image: -webkit-linear-gradient(180deg, #f0f 20%, #f66 40%); */
-  padding: 20px;
-  
+  padding: 10px;
   
 }
-
+#floating-iconos{
+  width:400px;
+}
 h1 {
   background-color: #613CAB;
   text-align: center;
@@ -134,29 +141,40 @@ h1 {
   padding: 10px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  margin-bottom: 0px;
+  margin-top:15px;
 }
 
 h2 {
   text-align: center;
-  font-weight: 700;
-  color: #12062F;
-  background-color:#C5BBD9 ;
-  border-radius: 20px;
-  border-radius: 20px;
+  color: #190c3d;
+  text-decoration: none;
+  /* background-color:#C5BBD9 ; */
+  /* border-radius: 20px; */
+font-size:30px;
   padding:4px;
-  font-weight: lighter;
-  width:100%;
-  align-self: center;
-  
+  /* font-weight: lighter; */
+  /* width:100%; */
+  margin-top:3px;
+  margin-left:0;
 
 }
-
+.float-flag i{
+  color:aqua;
+  width:30%;
+}
 .column {
-  width: 100%;
+  /* width: 100%; */
   background-color: #613CAB;
   padding: 10px;
   border-radius: 25px;
   margin-bottom:20px;
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -1px -1px 5px #190c3d;
+
 }
 
 .draggable{
@@ -164,12 +182,18 @@ h2 {
 }
 .newtaskbutton{
   border-style: none;
-  color: #12062F;
-  border-radius: 15px;
+  color: #b92bdb;
+  border-radius: 20px;
+  
   font-weight: bold;
   width:100%;
   font-size:1.5em;
-  background-color: #9B91B0;
+  background-color: #190c3d;
+}
+.task{
+  width:100%;
+
+
 }
 
 @media (min-width: 765px) { 
@@ -179,5 +203,10 @@ h2 {
     justify-content: space-between;
     
   }
+  .column {
+  width: 100%;
+  margin:5px;
+  
+}
 }
 </style>

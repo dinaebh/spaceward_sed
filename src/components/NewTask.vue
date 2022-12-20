@@ -38,37 +38,60 @@ export default {
 </script>
 
 <style scoped>
+*{
+  font-family: Manrope;
+}
 .new-task-form {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #C5BBD9;
+  margin-top: -15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #190c3d;
+  padding-top:15px;
+  width:100%;
   
 }
+
+
+
 .inputlabel{
+  font-family: Manrope;
   border-radius: 5px;
   padding: auto;
   font-size: 0,5 em;
   font-weight: lighter;
   margin-bottom: 5px;
-  border-color: rgb(103, 103, 104);
+  
+color:white;
   border-style: none;
-  width:95%;
+  width:100%;
 }
 .createtask{ 
-  padding: 10px;
-  border-radius: 10px;
-  background-color: white;
-  color:#12062F;
-  border-style: hidden;
+  padding: 3px 10px 3px 10px;
+  border-radius: 25px;
+  background-color: #190c3d;
+  color:#b92bdb;
+  border-style: none;
+  border-color: #b92bdb;
+  border-width:2px;
+  /* background-color: #190c3d;
+  color: #b92bdb;
+  
+  width:80%;  */
 }
 .createtask:hover{
-  background-color: #12062F;
+  background-color: #190c3d;
   color:white;
 }
 input{
-  border-style: outset;
+  
+  background: #190c3d;
+  box-shadow: 0px 0px 3px #b92bdb;
 }
 textarea{
   border-style: none;
+  width:100%;
+  background: #190c3d;
+  box-shadow:0px 00px 3px #b92bdb;
 }
 </style>
