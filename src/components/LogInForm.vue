@@ -1,5 +1,6 @@
 <template>
   <body>
+    <div class="cool-form">
     <form @submit.prevent="logInCall()">
   <div class="form">
     <input type="email" id="email" class="form__input" placeholder=" " v-model="email">
@@ -20,7 +21,7 @@
   <RouterLink to="/recoverpassword" class="text-decoration-none">
     Forgot your password?
   </RouterLink>
-  
+  </div>
   
 </body>
 
@@ -162,4 +163,7 @@ body {
   margin-left: 5px;
 }
 
+.cool-form {
+  background-color: red;
+}
 </style>

@@ -58,7 +58,6 @@ footer{
   align-items: center;
   font-weight: lighter;
   font-size: 0,6em;
-  
 }
 ul{
   padding: 0;

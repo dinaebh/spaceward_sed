@@ -68,16 +68,16 @@
   <div id="log-in">
     <LogInForm />
 </div>
-  <!-- <Footer /> -->
+  <!-- <AppFooter /> -->
 </template>
 
 <script>
-import Footer from "../components/Footer.vue";
+import AppFooter from "../components/AppFooter.vue";
 import LogInForm from "../components/LogInForm.vue";
 
 export default {
   components: {
-    Footer,
+    AppFooter,
     LogInForm,
   },
 };

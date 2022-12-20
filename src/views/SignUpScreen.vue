@@ -8,18 +8,18 @@
   </div>
   
   <!-- <button @click="$router.push()"></button> -->
-  <Footer />
+  <AppFooter />
 </template>
 
 
 <script>
 import SignOutForm from '../components/SignUpForm.vue'
-import Footer from "../components/Footer.vue";
+import AppFooter from "../components/AppFooter.vue";
 
 export default {
     components: {
         SignOutForm,
-        Footer,
+        AppFooter,
     }    
 }
 </script>
