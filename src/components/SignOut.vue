@@ -23,9 +23,10 @@ export default {
 <style scoped>
 button{
   color:#e96879;
-  border:none;
+  border-style: double;
   background-color: transparent;
   box-shadow: 0px 0px 20px #e96879;
+  border-color: #e96879;
   border-radius: 1px;
   padding:7px;
   margin-top: 10px;

@@ -15,7 +15,7 @@
             <button v-show="task.status !== 3" type="button" @click="changeStatus(3, task.id)">Done</button>
           </div>
 
-          <div v-if="!editing">
+          <div v-if="!editing" >
             <div>
               <h4>{{ task.title }}</h4>
             </div>
@@ -103,11 +103,13 @@ export default {
 
 h4 {
   color: #ffffff;
+  margin-top: 10px;
   
 }
 
 h6 {
   color: #ffffff;
+  font-weight: 100;
 }
 
 .edit-delete-buttons {
@@ -128,7 +130,7 @@ button {
   padding: 15px;
   margin: 5px;
   border-radius: 20px;
-  border-bottom: 10px solid #23173e;
+  /* border-bottom: 10px solid #23173e; */
   flex-wrap: wrap;
 }
 
