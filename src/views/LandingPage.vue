@@ -1,4 +1,7 @@
 <template>
+    <div class="top-nav">
+        <a href="#log-in" class="login-button">Log In</a>
+    </div>
   <div class="astronaut-img-and-description">
     <div class="what-is-spaceward">
       <div>
@@ -30,6 +33,7 @@
     </div>
   </div>
 
+  
   <div class="astronaut-img-and-description-desktop">
     <img
       class="astronaut-img"
@@ -60,24 +64,37 @@
       </div>
     </div>
   </div>
+  
+  <div id="log-in">
+    <LogInForm />
+</div>
   <!-- <Footer /> -->
 </template>
 
 <script>
 import Footer from "../components/Footer.vue";
+import LogInForm from "../components/LogInForm.vue";
 
 export default {
   components: {
     Footer,
+    LogInForm,
   },
 };
 </script>
 
 <style>
+
 h2 {
   color: white;
   border-bottom: 1px solid white;
-  width: 30vw;
+  width: 50vw;
+  font-size: 40px;
+  line-height: 80%;
+  letter-spacing: 5px;
+  margin-left: 15%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .astronaut-img {
@@ -99,9 +116,44 @@ h2 {
 .spaceward-description {
   color: white;
   width: 80vw;
-  font-size: 10px;
+  font-size: 11px;
   text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+#log-in {
+    padding: 50px;
+}
+
+.top-nav {
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+.login-button {
+    color: white;
+    padding: 8px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+.login-button a:visited, a:link {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/** DESKTOP VERSION STARTS HERE **/
 
 @media (min-width: 765px) {
   h2 {
@@ -139,7 +191,9 @@ h2 {
   }
 
   .what-is-spaceward {
-    /* float: left; */
+    display: block;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>
