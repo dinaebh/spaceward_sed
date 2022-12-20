@@ -2,7 +2,7 @@
   <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
-  <h1>To Do List</h1>
+  <h1>Final Project</h1>
   
 
   <!--columna uno-->
@@ -115,12 +115,14 @@ export default {
 
 <style scoped>
 .tasks-columns {
-  display: flex;
+  display: block;
+
   justify-content: space-around;
-  /* background-color:#031d36; */
+  
+  background-color:#C5BBD9 ;
   /* background-image: -webkit-linear-gradient(180deg, #f0f 20%, #f66 40%); */
   padding: 20px;
-  flex-wrap: wrap;
+  
   
 }
 
@@ -143,23 +145,30 @@ h2 {
   border-radius: 20px;
   padding:4px;
   font-weight: lighter;
-  width:180px;
+  width:100%;
   align-self: center;
   
 
 }
 
 .column {
-  width: 30%;
+  width: 100%;
   background-color: #613CAB;
   padding: 10px;
   border-radius: 25px;
+  margin-bottom:20px;
 }
 
 .draggable{
   cursor: move;
 }
 .newtaskbutton{
-  border-radius: 30px;
+  border-style: none;
+  color: #12062F;
+  border-radius: 100px;
+  font-weight: bold;
+  width:100%;
+  font-size:1.5em;
+  background-color: #9B91B0;
 }
 </style>

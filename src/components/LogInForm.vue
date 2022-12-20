@@ -50,7 +50,11 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1" />
       <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>
-    <button type="submit" class="btn btn-primary">SignIn</button>
+    <button type="submit" class="btn btn-primary">Log In</button>
+
+    <div class="forgotpassword"><RouterLink to="/recoverpassword" class="text-decoration-none" >
+    Forgot your password?</RouterLink>
+    </div>
   </form>
   <RouterLink to="/recoverpassword" class="text-decoration-none">
     Forgot your password?</RouterLink
