@@ -68,7 +68,7 @@
   <div id="log-in">
     <LogInForm />
 </div>
-  <!-- <AppFooter /> -->
+  <AppFooter /> 
 </template>
 
 <script>

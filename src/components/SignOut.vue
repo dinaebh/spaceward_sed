@@ -37,7 +37,7 @@ button{
 }
 .effectLogout:hover{
   background-color: #e96879;
-  color:#12062F;
+  color:#190c3d;
   backdrop-filter: blur(8px);
   box-shadow: -1px -1px 5px #e96879;
   
