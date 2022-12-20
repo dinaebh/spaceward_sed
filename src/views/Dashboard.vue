@@ -39,7 +39,5 @@ export default {
 </script>
 
 <style>
-.dash-body{
-  display:flex;
-}
+
 </style>
