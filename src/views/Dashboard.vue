@@ -32,7 +32,6 @@ export default {
     components: {
         SignOut,
         TaskColumn,
-        NewTask,
         Sidebar,
     },
 }
