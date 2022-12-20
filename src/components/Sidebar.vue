@@ -62,8 +62,7 @@ export default{
     --sidebar-item-active: #4a2b6f;
 
 }
-</style>
-<style scoped>
+
 
 
 .sidebar{
