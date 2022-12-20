@@ -1,6 +1,6 @@
 <template>
-<Sidebar/>
-<div :style="{'margin-left' : sidebarWidth}"></div>
+<!-- <Sidebar/>
+<div :style="{'margin-left' : sidebarWidth}"></div> -->
 <SignOut />
 <TaskColumn />
 </template>

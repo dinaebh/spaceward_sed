@@ -2,12 +2,13 @@
   <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
-  <div id="floating-iconos">
-  <div clas="float-space"></div>
- <div clas="float-rocket"><i class='fas fa-rocket'></i></div>
- <div clas="float-flag"><i class='fa fa-flag'></i><i class='fa fa-spinner'></i></div>
-</div>
-  <h1>Final Project</h1>
+  
+ 
+<div class="waves-header">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#ffffff" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,90.7C384,117,480,203,576,250.7C672,299,768,309,864,277.3C960,245,1056,171,1152,149.3C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg> </div>
+  <h1>SPACEWARD</h1>
   
 
  
@@ -15,7 +16,7 @@
    <!--columna uno-->
     <div class="column" @drop="onDrop($event, 1)" @dragover.prevent @dragenter.prevent>
       <h2>TO DO</h2>
-
+<div class="floated-galaxy"><img src="../assets/img/00_galaxy.png" alt="galaxy_img"></div>
       <div class="task" v-for="(task, index) of tasksStore.toDoTasks" :key="index" draggable @dragstart="startDrag($event, task)">
         
         <TaskCard :task=task />
@@ -30,6 +31,7 @@
     <!--columna dos-->
     <div class="column" @drop="onDrop($event, 2)" @dragover.prevent @dragenter.prevent>
       <h2>DOING</h2>
+      <div class="floated-rocket"><img src="../assets/img/00_rocket.png" alt="rocket_img"></div>
       <div class="task" v-for="(task, index) of tasksStore.doingTasks" :key="index" draggable @dragstart="startDrag($event, task)">
 
 <TaskCard :task=task />
@@ -41,6 +43,7 @@
     <!--columna tres-->
     <div class="column"  @drop="onDrop($event, 3)" @dragover.prevent @dragenter.prevent>
       <h2>DONE</h2>
+      <div class="floated-flag"><img src="../assets/img/00_flag.png" alt="flag_img"></div>
       <div class="task" v-for="(task, index) of tasksStore.doneTasks" :key="index" draggable @dragstart="startDrag($event, task)">
 
 <TaskCard :task=task />
@@ -48,6 +51,9 @@
 </div>
     </div>
   </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#ffffff" fill-opacity="1" d="M0,64L60,69.3C120,75,240,85,360,80C480,75,600,53,720,85.3C840,117,960,203,1080,218.7C1200,235,1320,181,1380,154.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+</svg>
 </template>
 
 <script>
@@ -120,6 +126,40 @@ export default {
 </script>
 
 <style scoped>
+/* .floated-galaxy{
+  position:absolute;
+  top:430px;
+  left:350px;
+
+  margin-top:-40px;
+  background-image: 50px;
+} */
+.floated-galaxy{
+  
+  display:flex;
+  align-self: flex-end;
+margin-top:-40px;
+  
+}
+.floated-galaxy img{
+  width:50px;
+}
+.floated-rocket{
+  display:flex;
+  align-self: flex-end;
+  margin-top:-40px;
+}
+.floated-rocket img{
+  width:50px;
+}
+.floated-flag img{
+  width:50px;
+}
+.floated-flag{
+  display: flex;
+  align-self: flex-end;
+  margin-top:-40px;
+}
 .tasks-columns {
   display: block;
 
@@ -130,17 +170,19 @@ export default {
   padding: 10px;
   
 }
-#floating-iconos{
-  width:400px;
+
+.waves-header{
+  margin-bottom:-20px;
 }
 h1 {
-  background-color: #613CAB;
+  background-color: white;
+  /* background-color: #613CAB; */
   text-align: center;
   font-weight: 800;
-  color: #ffffff;
+  color:#613CAB;
   padding: 10px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  /* border-top-left-radius: 25px;
+  border-top-right-radius: 25px; */
   margin-bottom: 0px;
   margin-top:15px;
 }
@@ -149,13 +191,14 @@ h2 {
   text-align: center;
   color: #190c3d;
   text-decoration: none;
+  border-bottom: 10px;
   /* background-color:#C5BBD9 ; */
   /* border-radius: 20px; */
 font-size:30px;
   padding:4px;
   /* font-weight: lighter; */
   /* width:100%; */
-  margin-top:3px;
+  
   margin-left:0;
 
 }
@@ -192,10 +235,9 @@ font-size:30px;
 }
 .task{
   width:100%;
-
-
 }
-
+  
+/** DESKTOP STARTS HERE **/
 @media (min-width: 765px) { 
   .tasks-columns {
     display: flex;

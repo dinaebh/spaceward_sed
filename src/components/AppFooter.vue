@@ -96,6 +96,7 @@ li a{
 a:hover{
   color:#e96879;
 }
+/** DESKTOP STARTS HERE **/
 @media (min-width: 765px) {
   #footerDiv{
     display:flex;

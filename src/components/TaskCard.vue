@@ -15,7 +15,10 @@
             </button>
           </div>
             <div class="movetoButtons">
-            Move:
+            move:
+              <!-- <span class="material-icons">keyboard_double_arrow_right</span> -->
+              <!-- <span class="material-icons" style="background-clip: text; color: transparent; background-image: -webkit-linear-gradient(top, rgb(69, 169, 211), rgb(187, 0, 255));">keyboard_double_arrow_right</span> -->
+
             <button v-show="task.status !== 1" type="button" @click="changeStatus(1, task.id)"><i class='fa fa-spinner'></i></button>
             <button v-show="task.status !== 2" type="button" @click="changeStatus(2, task.id)"><i class='fas fa-rocket'></i></button>
             <button v-show="task.status !== 3" type="button" @click="changeStatus(3, task.id)"><i class='fa fa-flag'></i> </button>
