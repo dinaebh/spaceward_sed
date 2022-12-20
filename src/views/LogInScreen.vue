@@ -1,24 +1,25 @@
 <template>
-<LogInForm />
+<LogInForm id="app-loginform" />
 
-<Footer/>
+<AppFooter id="app-footer" />
 
 </template>
 
 
 <script>
 import LogInForm from "../components/LogInForm.vue";
-import Footer from "../components/Footer.vue";
+import AppFooter from "../components/AppFooter.vue";
 
 
 export default {
     components: {
         LogInForm,
-        Footer,
+        AppFooter,
         
     }
 }
 </script>
+
 <style scoped>
 
 </style>

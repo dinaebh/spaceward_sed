@@ -109,7 +109,7 @@ export default defineStore("user", {
         throw error
       } else { 
         this.user = null;
-        this.$router.push ("/loginscreen")
+        this.$router.push ("/landingpage")
       }
       
     },

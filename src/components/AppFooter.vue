@@ -1,6 +1,7 @@
 <template>
      <!-- subfooter -->
-   <footer style="background: linear-gradient(135deg, #F97794 10%, #623AA2 100%)" class="d-flex flex-direction-row justify-content-space-between">
+     <!-- style="background: linear-gradient(135deg, #F97794 10%, #623AA2 100%)" class="d-flex flex-direction-row justify-content-space-between" -->
+   <footer>
     
   <a href="#"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-yxwia&psig=AOvVaw0uHo2VVGnEUGbospjGzwWO&ust=1671215216860000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMjS5Pyf_PsCFQAAAAAdAAAAABAJ" alt="logo"></a> 
 
@@ -50,13 +51,13 @@
 </script>
 <style scoped>
 footer{
+  margin-top:40px;
   padding: 5px;
   display:flex;
   flex-direction:column;
   align-items: center;
   font-weight: lighter;
-  font-size: 0,8em;
-  
+  font-size: 0,6em;
 }
 ul{
   padding: 0;
@@ -87,10 +88,27 @@ li a{
 a:hover{
   color:#e96879;
 }
-
+@media (min-width: 765px) {
+  footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content:center;
+    width:100%;
+    
+  
+    
+  }
+  .list-column{
+  width:50%;
+  }
+  .list-column ul{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+   
+    justify-content: space-around;
+  }
+}
 </style>
 
-// Pendent a importar a Dashboard, necessari? 
-// // import Footer from "../components/Footer.vue";
-// // <Footer/>
-// // Footer

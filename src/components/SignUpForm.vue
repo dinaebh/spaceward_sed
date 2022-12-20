@@ -73,10 +73,10 @@ export default {
 </script>
 
 <style scoped>
-*{
+/* *{
   background-color: #10052B;
 
-}
+} */
 
 label{
   color: antiquewhite;

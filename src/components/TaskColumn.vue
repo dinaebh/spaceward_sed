@@ -2,13 +2,13 @@
   <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
-  <h1>To Do List</h1>
+  <h1>Final Project</h1>
   
 
   <!--columna uno-->
   <div class="tasks-columns">
     <div class="column" @drop="onDrop($event, 1)" @dragover.prevent @dragenter.prevent>
-      <h2>TO DO</h2>
+      <div><h2>TO DO</h2></div>
 
       <div class="task" v-for="(task, index) of tasksStore.toDoTasks" :key="index" draggable @dragstart="startDrag($event, task)">
         
@@ -17,7 +17,7 @@
       </div>
   
 
-      <button @click="newTask = !newTask">New Task</button>
+      <button @click="newTask = !newTask" class="newtaskbutton">+</button>
       <NewTask v-show="newTask" />
     </div>
 
@@ -115,37 +115,69 @@ export default {
 
 <style scoped>
 .tasks-columns {
-  display: flex;
+  display: block;
+
   justify-content: space-around;
-  background-color:#031d36;
+  
+  background-color:#C5BBD9 ;
+  /* background-image: -webkit-linear-gradient(180deg, #f0f 20%, #f66 40%); */
   padding: 20px;
-  flex-wrap: wrap;
+  
+  
 }
 
 h1 {
-  background-color: #ebb0a2;
+  background-color: #613CAB;
   text-align: center;
   font-weight: 800;
-  color: #174e78;
+  color: #ffffff;
   padding: 10px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 h2 {
   text-align: center;
   font-weight: 700;
-  color: #174e78;
+  color: #12062F;
+  background-color:#C5BBD9 ;
+  border-radius: 20px;
+  border-radius: 20px;
+  padding:4px;
+  font-weight: lighter;
+  width:100%;
+  align-self: center;
+  
+
 }
 
 .column {
-  width: 30%;
-  background-color: #ebb0a2;
+  width: 100%;
+  background-color: #613CAB;
   padding: 10px;
   border-radius: 25px;
+  margin-bottom:20px;
 }
 
 .draggable{
   cursor: move;
+}
+.newtaskbutton{
+  border-style: none;
+  color: #12062F;
+  border-radius: 15px;
+  font-weight: bold;
+  width:100%;
+  font-size:1.5em;
+  background-color: #9B91B0;
+}
+
+@media (min-width: 765px) { 
+  .tasks-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
 }
 </style>
