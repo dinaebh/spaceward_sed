@@ -174,11 +174,21 @@ ul li a .icon::after{
 ul li a .text{
     position: relative;
     padding: 0 15px;
-    color: #333;
+    color: #190c3d;
     display: flex;
     align-items: center;
     height: 60px;
     opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+
+}
+.navigation.active ul li a .text{
+  visibility: visible;
+  opacity: 1;
+}
+ul li.active a .text{
+  color: #fff;
 
 }
 </style>
