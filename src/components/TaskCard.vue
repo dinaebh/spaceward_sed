@@ -1,7 +1,7 @@
 <template>
-   <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
+   <!-- <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
-  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" /> -->
 
     <div class="task">
 
@@ -15,7 +15,7 @@
             </button>
           </div>
             <div class="movetoButtons">
-            move:
+              <div class="move-to-icon"><i class="fa-duotone fa-chevrons-right"></i></div>
               <!-- <span class="material-icons">keyboard_double_arrow_right</span> -->
               <!-- <span class="material-icons" style="background-clip: text; color: transparent; background-image: -webkit-linear-gradient(top, rgb(69, 169, 211), rgb(187, 0, 255));">keyboard_double_arrow_right</span> -->
 
@@ -110,9 +110,9 @@ export default {
 
 <style scoped>
 
-*{
+/* *{
   font-family: Manrope;
-}
+} */
 
 h5 {
   color: #ffffff;
@@ -148,6 +148,13 @@ button {
   border-radius: 25px;
   background-color: #190c3d;
   color: #b92bdb;
+  border-color: #b92bdb;
+  width:80%;
+}
+.move-to-icon{
+  border-radius: 25px;
+  background-color: #190c3d;
+  color: #0ba4e6;
   border-color: #b92bdb;
   width:80%;
 }
@@ -191,7 +198,7 @@ flex-wrap: nowrap;
 width:50%;
 gap:10px;
 }
-
+/** DESKTOP VERSION STARTS HERE */
 @media (min-width: 765px) { 
   .movetoButtons{
     display:none;

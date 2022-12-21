@@ -1,11 +1,10 @@
 <template>
-<Sidebar/>
-<div :style="{'margin-left' : sidebarWidth}"></div>
-<SignOut />
+
+
 <div class="dash-body">
-  <Sidebar/>
+  <Sidebar class="sidebar" />
   <TaskColumn />
-</div>
+<!-- </div> -->
 
 
 </template>
@@ -39,6 +38,20 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.dash-body{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.sidebar{
+  display:none;
+}
+@media (min-width: 765px) { 
 
+.sidebar{
+  display: flex;
+}
+
+}
 </style>
