@@ -132,14 +132,16 @@ ul li a .icon{
     height: 60px;
     border-radius: 10px;
     font-size: 1.75em;
-    line-height: 60px;
+    line-height: 50px;
     border: 6px solid transparent;
     transition: 0.5s;
+    color:#190c3d;
 }
 
 ul li.active a .icon{
     background: var(--clr);
-    color: #fff;
+    color: #190c3d;
+    
 }
 
 ul li a .icon::before{
