@@ -1,14 +1,14 @@
 <template>
 <SignOutForm />
 
-<div id="right">
+<!-- <div id="right">
   <div id="alreadyregistered">
   <p>Already registered?</p>
     <RouterLink to="/loginscreen"> <button type="button" class="btn btn-outline-primary">Log In</button></RouterLink>
   </div></div>
-  
+   -->
   <!-- <button @click="$router.push()"></button> -->
-  <AppFooter />
+  <div class="fixed-footer"><AppFooter /></div>
 </template>
 
 
@@ -37,4 +37,11 @@ p{
   align-self: flex-end;
   
 }
+.fixed-footer{
+  position: fixed;
+  bottom:0;
+  width:100%;
+}
+  
+
 </style>

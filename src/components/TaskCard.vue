@@ -161,7 +161,7 @@ button {
 }
 
 .task {
-  background-color: #190c3d;
+  background-color: #dfd5fc;
   color: white;
   padding: 15px;
   margin: 5px;
