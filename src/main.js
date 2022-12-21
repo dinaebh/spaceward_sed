@@ -5,6 +5,7 @@ import App from "./App.vue";
 import router from "./router";
 import piniaPersist from 'pinia-plugin-persist';
 import "./assets/main.css";
+import ScrollParallax from 'vue3-parallax/src/components/ScrollParallax.vue';
 
 
 const app = createApp(App);
@@ -16,3 +17,4 @@ pinia.use(piniaPersist)
 app.use(pinia);
 app.use(router);
 app.mount("#app");
+app.component('scroll-parallax', ScrollParallax);

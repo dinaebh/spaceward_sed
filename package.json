@@ -21,6 +21,7 @@
     "vue": "^3.2.45",
     "vue-feather-icons": "^5.1.0",
     "vue-router": "^4.1.6",
+    "vue3-parallax": "^0.1.4",
     "vuedraggable": "^4.1.0"
   },
   "devDependencies": {
