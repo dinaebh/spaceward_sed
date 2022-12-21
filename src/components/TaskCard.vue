@@ -1,7 +1,5 @@
 <template>
-   <!-- <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
-  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
-  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" /> -->
+
 
     <div class="task">
 
@@ -15,9 +13,8 @@
             </button>
           </div>
             <div class="movetoButtons">
-              <div class="move-to-icon"><i class="fa-duotone fa-chevrons-right"></i></div>
-              <!-- <span class="material-icons">keyboard_double_arrow_right</span> -->
-              <!-- <span class="material-icons" style="background-clip: text; color: transparent; background-image: -webkit-linear-gradient(top, rgb(69, 169, 211), rgb(187, 0, 255));">keyboard_double_arrow_right</span> -->
+              <div class="move-to-icon"><i class='fa fa-angle-double-right'></i></div>
+              
 
             <button v-show="task.status !== 1" type="button" @click="changeStatus(1, task.id)"><i class='fa fa-spinner'></i></button>
             <button v-show="task.status !== 2" type="button" @click="changeStatus(2, task.id)"><i class='fas fa-rocket'></i></button>
@@ -144,6 +141,10 @@ h6 {
   justify-content: space-around;
   gap: 10px;
 }
+.movetoButtons button{
+  color: #4836c9;
+  border-color: #4836c9;
+}
 button {
   border-radius: 25px;
   background-color: #190c3d;
@@ -154,9 +155,9 @@ button {
 .move-to-icon{
   border-radius: 25px;
   background-color: #190c3d;
-  color: #0ba4e6;
-  border-color: #b92bdb;
-  width:80%;
+  color: #4836c9;
+  
+  width:990%;
 }
 
 .task {
@@ -202,6 +203,9 @@ gap:10px;
 @media (min-width: 765px) { 
   .movetoButtons{
     display:none;
+  }
+  .task:hover{
+box-shadow: 0px 0px 10px #9e75d0;
   }
 }
 </style>
