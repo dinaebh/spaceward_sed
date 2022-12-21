@@ -207,7 +207,7 @@ body {
 .tasks-columns {
   display: block;
   justify-content: center;
-  background-color: #f6f7f1;
+  background-color: #04294f;
   border-radius: 30px;
   /* background-image: -webkit-linear-gradient(180deg, #f0f 20%, #f66 40%); */
   padding: 10px;
@@ -270,7 +270,7 @@ h1 {
 }
 
 .column-one {
-  /* width: 100%; */
+  width: 30%;
   background-color: #ffd8cc;
   padding: 10px;
   border-radius: 25px;
@@ -283,7 +283,7 @@ h1 {
 }
 
 .column-two {
-  /* width: 100%; */
+  width: 30%;
   background-color: #fff0cc;
   padding: 10px;
   border-radius: 25px;
@@ -296,7 +296,7 @@ h1 {
 }
 
 .column-three {
-  /* width: 100%; */
+  width: 30%;
   background-color: #cceff9;
   padding: 10px;
   border-radius: 25px;

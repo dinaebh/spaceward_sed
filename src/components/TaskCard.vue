@@ -161,12 +161,12 @@ button {
 .move-to-icon {
   border-radius: 25px;
   /* background-color: #ffffff; */
-  color: #395a6b;
+  color: #ff3a00;
   width: 100%;
 }
 
 .task {
-  background-color: #f6f7f1;
+  background-color: #ffffff;
   color: white;
   padding: 15px;
   margin-bottom: 15px;
