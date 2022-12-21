@@ -158,7 +158,7 @@ body {
   top: -0.5rem;
   font-size: 0.8rem;
   left: 0.8rem;
-  color: rgb(74, 10, 177);;
+  color: rgb(201, 4, 142);
 }
 
 .we-never-share-txt {
