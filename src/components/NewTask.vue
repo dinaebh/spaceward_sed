@@ -46,13 +46,14 @@ export default {
   margin-top: 0px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: #43516c;
+  background-color: #ffffff;
+  border-top: 1px solid #ff3a00;
   padding-top:15px;
   width: 100%;
 }
 
 .inputlabel{
-  font-family: 'Manrope';
+  font-family: 'Arial';
   border-radius: 5px;
   padding: auto;
   font-size: 0,5 em;
@@ -66,30 +67,27 @@ color: #04294f;
 .createtask{ 
   padding: 3px 10px 3px 10px;
   border-radius: 10px;
-  background-color: #dba531;
-  color:#ffffff;
-  border: 1px solid #e5e8c7;
-  border-width:2px;
-  
-  /* background-color: #190c3d;
-  color: #b92bdb;
-  
-  width:80%;  */
+  background-color: #ffd8cc;
+  color:#04294f;
+  font-weight: 700;
+  border: 1px solid #ff3a00;
 }
-.createtask:hover{
-  background-color: #750707;
-  color:black;
-  box-shadow: 0px 0px 4px #ff3a00;
-}
+/* .createtask:hover{
+  background-color: #ffffff;
+  color:ff3a00;
+} */
+
 input{
-  
-  background: #e5e8c7;
-  box-shadow: 0px 0px 3px #dba531;
+  padding: 5px;
+  background: #ffd8cc;
+  box-shadow: 0px 0px 3px #ffffff;
 }
+
 textarea{
   border-style: none;
   width:100%;
-  background: #e5e8c7;
-  box-shadow: 0px 0px 3px #dba531;
+  background: #ffd8cc;
+  box-shadow: 0px 0px 3px #ffffff;
+  padding: 5px;
 }
 </style>
