@@ -15,12 +15,12 @@
       <div class="tasks-columns">
         <!--columna uno-->
         <div
-          class="column"
+          class="column-one"
           @drop="onDrop($event, 1)"
           @dragover.prevent
           @dragenter.prevent
         >
-          <h2>TO DO</h2>
+        <div class="todo-title">TO DO</div>
           <!-- <div class="floated-galaxy">
             <img src="../assets/img/00_balls.png" alt="galaxy_img" />
           </div> -->
@@ -31,7 +31,7 @@
             draggable
             @dragstart="startDrag($event, task)"
           >
-            <TaskCard :task="task" />
+            <TaskCard :task="task" class="card-one-column"/>
           </div>
 
           <button :class="{ active: newTask }" @click="newTask = !newTask" class="newtaskbutton">+</button>
@@ -40,12 +40,12 @@
 
         <!--columna dos-->
         <div
-          class="column"
+          class="column-two"
           @drop="onDrop($event, 2)"
           @dragover.prevent
           @dragenter.prevent
         >
-          <h2>DOING</h2>
+          <div class="doing-title">DOING</div>
           <!-- <div class="floated-rocket">
             <img src="../assets/img/00_rocket.png" alt="rocket_img" />
           </div> -->
@@ -56,18 +56,18 @@
             draggable
             @dragstart="startDrag($event, task)"
           >
-            <TaskCard :task="task" />
+            <TaskCard :task="task" class="card-two-column" />
           </div>
         </div>
 
         <!--columna tres-->
         <div
-          class="column"
+          class="column-three"
           @drop="onDrop($event, 3)"
           @dragover.prevent
           @dragenter.prevent
         >
-          <h2>DONE</h2>
+        <div class="done-title">DONE</div>
           <!-- <div class="floated-flag">
             <img src="../assets/img/00_flag.png" alt="flag_img" />
           </div> -->
@@ -78,7 +78,7 @@
             draggable
             @dragstart="startDrag($event, task)"
           >
-            <TaskCard :task="task" />
+            <TaskCard :task="task" class="card-three-column" />
           </div>
         </div>
       </div>
@@ -168,6 +168,18 @@ body {
   background-color: black;
 }
 
+.card-one-column {
+  border-left: 10px solid #ff3a00;
+}
+
+.card-two-column {
+  border-left: 10px solid #ffb400;
+}
+
+.card-three-column {
+  border-left: 10px solid #00aee0;
+}
+
 .floated-galaxy {
   display: flex;
   align-self: flex-end;
@@ -195,7 +207,7 @@ body {
 .tasks-columns {
   display: block;
   justify-content: center;
-  background-color: #ce7656;
+  background-color: #f6f7f1;
   border-radius: 30px;
   /* background-image: -webkit-linear-gradient(180deg, #f0f 20%, #f66 40%); */
   padding: 10px;
@@ -213,7 +225,7 @@ h1 {
   /* background-color: #613CAB; */
   text-align: center;
   font-weight: 800;
-  color: #43516c;
+  color: #273058;
   padding: 10px;
   /* border-top-left-radius: 25px;
   border-top-right-radius: 25px; */
@@ -221,30 +233,71 @@ h1 {
   margin-top: 15px;
 }
 
-h2 {
+.todo-title {
   text-align: center;
-  color: #dca531;
-  text-shadow: 3px 0px #d85426;
+  color: #ff3a00;
+  text-shadow: 3px 0px #f6f7f1;
   text-decoration: none;
   border-bottom: 10px;
-  /* background-color:#C5BBD9 ; */
-  /* border-radius: 20px; */
   font-size: 30px;
   padding: 4px;
-  /* font-weight: lighter; */
-  /* width:100%; */
-
   margin-left: 0;
+  font-weight: 700;
 }
 
-/* #b274ff .float-flag i {
-  color: aqua;
-  width: 30%;
-} */
+.doing-title {
+  text-align: center;
+  color: #ffb400;
+  text-shadow: 3px 0px #f6f7f1;
+  text-decoration: none;
+  border-bottom: 10px;
+  font-size: 30px;
+  padding: 4px;
+  margin-left: 0;
+  font-weight: 700;
+}
 
-.column {
+.done-title {
+  text-align: center;
+  color: #00aee0;
+  text-shadow: 3px 0px #f6f7f1;
+  text-decoration: none;
+  border-bottom: 10px;
+  font-size: 30px;
+  padding: 4px;
+  margin-left: 0;
+  font-weight: 700;
+}
+
+.column-one {
   /* width: 100%; */
-  background-color: #e5e8c7;
+  background-color: #ffd8cc;
+  padding: 10px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  /* box-shadow: -1px -1px 5px #190c3d; */
+}
+
+.column-two {
+  /* width: 100%; */
+  background-color: #fff0cc;
+  padding: 10px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  /* box-shadow: -1px -1px 5px #190c3d; */
+}
+
+.column-three {
+  /* width: 100%; */
+  background-color: #cceff9;
   padding: 10px;
   border-radius: 25px;
   margin-bottom: 20px;
@@ -260,12 +313,12 @@ h2 {
 }
 .newtaskbutton {
   border-style: none;
-  color: #e5e8c7;
+  color: #ff3a00;
   border-radius: 20px;
   font-weight: bold;
   width: 100%;
   font-size: 1.5em;
-  background-color: #dba531;
+  background-color: #ffffff;
 }
 .newtaskbutton.active {
   border-radius: 20px 20px 0px 0px;

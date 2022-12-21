@@ -2,22 +2,22 @@
   <div class="body">
     <div class="navigation">
       <ul>
-        <li class="list" style="--clr:#d85426" :class="{ active: isActive }"  @click="IsActive(1)">
+        <li class="list" style="--clr:#ff3a00" :class="{ active: isActive }"  @click="IsActive(1)">
           <a href="#" >
             <span class="icon"><i class="fa-solid fa-house"></i></span>
           </a>
         </li>
-        <li class="list" style="--clr:#05659e" :class="{ active: isActive2 }" @click="IsActive(2)">
+        <li class="list" style="--clr:#ffb400" :class="{ active: isActive2 }" @click="IsActive(2)">
           <a href="#" >
             <span class="icon"><i class="fa-regular fa-user"></i></span>
           </a>
         </li>
-        <li class="list" style="--clr:#43516c" :class="{ active: isActive3 }" @click="IsActive(3)">
+        <li class="list" style="--clr:#00aee0" :class="{ active: isActive3 }" @click="IsActive(3)">
           <a href="#" >
             <span class="icon"><i class="fa-solid fa-gear"></i></span>
           </a>
         </li>
-        <li class="list" style="--clr:#5f947b" :class="{ active: isActive4 }" @click="IsActive(4)">
+        <li class="list" style="--clr:#00e0a3" :class="{ active: isActive4 }" @click="IsActive(4)">
           <a href="#" >
             <span class="icon"
               ><i class="fa-solid fa-right-from-bracket"></i
@@ -85,7 +85,7 @@ export default{
     position: relative;
     width: 100vw;
     height: 60px;
-    background: #dba531;
+    background: #04294f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,14 +124,14 @@ export default{
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
-    color: #43516c;
+    color: #ffffff;
     font-size: 1.4em;
     transition: 0.20s;
     transition-delay: 0s;
 }
 .navigation ul li.active a .icon{
     background: var(--clr);
-    color: #e5e8c7;
+    color: #04294f;
     transform: translateY(-25px);
     transition-delay: 0.10s;
 }
@@ -158,7 +158,7 @@ export default{
     top: -28px;
     width: 70px;
     height: 70px;
-    background: #dba531;
+    background: #04294f;
     border-radius: 50%;
     z-index: 1;
     transition: 0.5s;
@@ -173,7 +173,7 @@ export default{
     height: 20px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: 10px 14px #dba531;
+    box-shadow: 10px 14px #04294f;
 }
 
 .indicator::after{
@@ -185,7 +185,7 @@ export default{
     height: 20px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: -10px 14px #dba531;
+    box-shadow: -10px 14px #04294f;
 }
 
 .navigation ul li:nth-child(1).active ~ .indicator{

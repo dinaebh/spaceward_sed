@@ -117,12 +117,12 @@ export default {
 } */
 
 h5 {
-  color: #E5E8C7;
+  color: #395a6b;
   margin-top: 10px;
 }
 
 h6 {
-  color: #E5E8C7;
+  color: #395a6b;
   font-weight: 100;
 }
 
@@ -144,32 +144,33 @@ h6 {
   gap: 10px;
 }
 .movetoButtons button {
-  color: #E5E8C7;
-  border-color: #E5E8C7;
+  color: #395a6b;
+  border-color: #395a6b;
+  background-color: white;
 }
 
 button {
   border-radius: 10px;
-  background-color: #D85426;
-  color: #E5E8C7;
+  /* background-color: #d1a657; */
+  color: #758494;
   width: 100%;
-  border: 2px solid #E5E8C7;
+  border: none;
+  background-color: #ffffff;
 }
 
 .move-to-icon {
   border-radius: 25px;
-  background-color: #43516c;
-  color: #E5E8C7;
+  /* background-color: #ffffff; */
+  color: #395a6b;
   width: 100%;
 }
 
 .task {
-  background-color: #43516c;
-  box-shadow: 3px 0px #DBA531;
+  background-color: #f6f7f1;
   color: white;
   padding: 15px;
-  margin: 5px;
-  border-radius: 20px;
+  margin-bottom: 15px;
+  border-radius: 0px 10px 10px 0px;
   /* border-bottom: 10px solid #23173e; */
   flex-wrap: wrap;
   box-sizing: border-box;

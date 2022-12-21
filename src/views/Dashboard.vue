@@ -46,7 +46,7 @@ export default {
 
 <style scoped>
 body {
-  background-color: #ce7656;
+  background-color: #f6f7f1;
 }
 
 .navbar{
