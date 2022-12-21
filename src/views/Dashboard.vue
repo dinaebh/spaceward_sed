@@ -1,6 +1,6 @@
 <template>
 
-
+ 
 <div class="dash-body">
   <Sidebar class="sidebar" />
   <TaskColumn />
@@ -53,6 +53,7 @@ export default {
   display: flex;
   flex-direction: row;
   gap: 50px;
+  
 }
 .sidebar{
   display:none;

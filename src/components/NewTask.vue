@@ -74,6 +74,7 @@ color:white;
   border-style: none;
   border-color: #b92bdb;
   border-width:2px;
+  
   /* background-color: #190c3d;
   color: #b92bdb;
   
@@ -82,6 +83,7 @@ color:white;
 .createtask:hover{
   background-color: #190c3d;
   color:white;
+  box-shadow: 0px 0px 4px #b92bdb;
 }
 input{
   
