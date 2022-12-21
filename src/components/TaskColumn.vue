@@ -1,7 +1,7 @@
 <template>
-  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <!-- <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
-  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" /> -->
   
  
 <div class="waves-header">
