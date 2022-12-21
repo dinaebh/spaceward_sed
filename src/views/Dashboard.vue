@@ -5,8 +5,9 @@
   <Sidebar class="sidebar" />
   <TaskColumn />
 </div>
-
-
+<div class="navbar">
+<Navbar/>
+</div>
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import TaskColumn from '../components/TaskColumn.vue';
 import { mapStores } from "pinia";
 import tasksStore from "../stores/task.js";
 import Sidebar from "../components/Sidebar.vue"
+import Navbar from "../components/Navbar.vue"
 
  
 
@@ -34,11 +36,18 @@ export default {
         SignOut,
         TaskColumn,
         Sidebar,
+        Navbar,
     },
 }
 </script>
 
 <style scoped>
+.navbar{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+
+}
 .dash-body{
   display: flex;
   flex-direction: row;
