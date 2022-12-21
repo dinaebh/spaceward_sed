@@ -58,13 +58,10 @@
   align-items: center;
   font-weight: lighter;
   font-size: 0,4em;
-  position:fixed;
   width:100%;
   bottom:0;
   height:150px;
-  
-
- 
+  line-height: 150%;
 }
 
 ul {

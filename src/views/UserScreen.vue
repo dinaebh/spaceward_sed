@@ -1,13 +1,13 @@
 <template>
-<Sidebar/>
+<Navbar/>
 </template>
 
 <script>
-import Sidebar from "../components/UserProfile.vue"
+import Navbar from "../components/Navbar.vue"
 
 export default{
     components:{
-        Sidebar,
+        Navbar,
 
     },
     data(){

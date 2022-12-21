@@ -4,7 +4,11 @@
   <path fill="#ffffff" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,90.7C384,117,480,203,576,250.7C672,299,768,309,864,277.3C960,245,1056,171,1152,149.3C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
 </svg>
     <header class="header-background">
-      
+      <img
+        class="astronaut-img"
+        src="../assets/img/astronautmain.png"
+        alt="astronaut-img"
+      />
     </header>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
   <path fill="#ffffff" fill-opacity="1" d="M0,64L60,69.3C120,75,240,85,360,80C480,75,600,53,720,85.3C840,117,960,203,1080,218.7C1200,235,1320,181,1380,154.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
@@ -20,8 +24,8 @@
         </h2>
       </div>
       <img
-        class="astronaut-img"
-        src="../assets/img/astronautmain.png"
+        class="astronaut-tasks-img"
+        src="../assets/img/astronaut-tasks.png"
         alt="astronaut-img"
       />
       <div class="spaceward-description">
@@ -115,6 +119,11 @@ h2 {
   margin: auto;
 }
 
+.astronaut-tasks-img {
+  width: 80vw;
+  margin: auto;
+}
+
 .astronaut-img-and-description {
   display: flex;
   justify-content: center;
@@ -142,7 +151,11 @@ h2 {
 .header-background {
   background-color: white;
   width: 100vw;
-  height: 200px;
+  height: 300px;
+}
+
+.header-image {
+  width: 300px;
 }
 
 
@@ -181,6 +194,10 @@ h2 {
   }
 
   .astronaut-img {
+    width: 45vw;
+  }
+
+  .astronaut-tasks-img {
     width: 45vw;
   }
 
