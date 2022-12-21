@@ -1,11 +1,11 @@
 <template>
-<Sidebar/>
+<!-- <Sidebar/>
 <div :style="{'margin-left' : sidebarWidth}"></div>
 <SignOut />
 <div class="dash-body">
-  <Sidebar/>
+  <Sidebar/> -->
   <TaskColumn />
-</div>
+<!-- </div> -->
 
 
 </template>
