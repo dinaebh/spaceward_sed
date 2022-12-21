@@ -48,7 +48,7 @@ body {
 }
 
 .navigation {
-  position: fixed;
+
   inset: 40px 0 40px 20px;
   background: #fff;
   width: 75px;
