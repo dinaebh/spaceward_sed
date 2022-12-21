@@ -46,7 +46,8 @@ export default {
   display: flex;
   justify-content: center;
   position: fixed;
-
+  bottom: -10px;
+  left: 0px;
 }
 .dash-body{
   display: flex;

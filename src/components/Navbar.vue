@@ -83,13 +83,13 @@ export default{
 }
 .navigation{
     position: relative;
-    width: 380px;
+    width: 100vw;
     height: 60px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .navigation ul{
