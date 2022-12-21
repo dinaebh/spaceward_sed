@@ -131,6 +131,13 @@ h2 {
   flex-direction: column;
 }
 
+.what-is-spaceward {
+  background-color: #04294f;
+  width: 90vw;
+  padding: 20px;
+  border-radius: 30px;
+}
+
 .astronaut-img-and-description-desktop {
   display: none;
 }
@@ -142,6 +149,7 @@ h2 {
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
 }
 
 .space-footer {
