@@ -1,5 +1,7 @@
 <template>
 
+ <body>
+  
  
 <div class="dash-body">
   <Sidebar class="sidebar" />
@@ -8,6 +10,7 @@
 <div class="navbar">
 <Navbar/>
 </div>
+</body>
 </template>
 
 <script>
@@ -42,6 +45,10 @@ export default {
 </script>
 
 <style scoped>
+body {
+  background-color: #ce7656;
+}
+
 .navbar{
   display: flex;
   justify-content: center;
@@ -50,7 +57,7 @@ export default {
   left: 0px;
 }
 .dash-body{
-  display: flex;
+  display: block;
   flex-direction: row;
   gap: 50px;
   
@@ -58,10 +65,20 @@ export default {
 .sidebar{
   display:none;
 }
+
+
+
 @media (min-width: 765px) { 
 
 .sidebar{
   display: flex;
+}
+
+.dash-body{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  
 }
 
 }

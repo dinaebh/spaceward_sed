@@ -43,36 +43,32 @@ export default {
 }
 .new-task-form {
   padding: 10px;
-  margin-top: -15px;
+  margin-top: 0px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: #190c3d;
+  background-color: #43516c;
   padding-top:15px;
-  width:100%;
-  
+  width: 100%;
 }
 
-
-
 .inputlabel{
-  font-family: Manrope;
+  font-family: 'Manrope';
   border-radius: 5px;
   padding: auto;
   font-size: 0,5 em;
   font-weight: lighter;
   margin-bottom: 5px;
   
-color:white;
+color: #04294f;
   border-style: none;
   width:100%;
 }
 .createtask{ 
   padding: 3px 10px 3px 10px;
-  border-radius: 25px;
-  background-color: #190c3d;
-  color:#b92bdb;
-  border-style: none;
-  border-color: #b92bdb;
+  border-radius: 10px;
+  background-color: #dba531;
+  color:#ffffff;
+  border: 1px solid #e5e8c7;
   border-width:2px;
   
   /* background-color: #190c3d;
@@ -81,19 +77,19 @@ color:white;
   width:80%;  */
 }
 .createtask:hover{
-  background-color: #190c3d;
-  color:white;
-  box-shadow: 0px 0px 4px #b92bdb;
+  background-color: #750707;
+  color:black;
+  box-shadow: 0px 0px 4px #ff3a00;
 }
 input{
   
-  background: #190c3d;
-  box-shadow: 0px 0px 3px #b92bdb;
+  background: #e5e8c7;
+  box-shadow: 0px 0px 3px #dba531;
 }
 textarea{
   border-style: none;
   width:100%;
-  background: #190c3d;
-  box-shadow:0px 00px 3px #b92bdb;
+  background: #e5e8c7;
+  box-shadow: 0px 0px 3px #dba531;
 }
 </style>
