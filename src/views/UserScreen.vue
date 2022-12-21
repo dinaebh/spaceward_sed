@@ -1,13 +1,13 @@
 <template>
-<Navbar/>
+<Parallax/>
 </template>
 
 <script>
-import Navbar from "../components/Navbar.vue"
+import Parallax from "../components/Parallax.vue"
 
 export default{
     components:{
-        Navbar,
+        Parallax,
 
     },
     data(){
