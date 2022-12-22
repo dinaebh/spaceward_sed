@@ -291,6 +291,7 @@ h2 {
     font-family: "Poppins", sans-serif;
     letter-spacing: 0.3cm;
     padding-bottom: 10px;
+    margin-left: 12px;
   }
 
   .header-background {
