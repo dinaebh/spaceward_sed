@@ -270,7 +270,7 @@ h1 {
 }
 
 .column-one {
-  width: 30%;
+  width: 100%;
   background-color: #ffd8cc;
   padding: 10px;
   border-radius: 25px;
@@ -283,7 +283,7 @@ h1 {
 }
 
 .column-two {
-  width: 30%;
+  width: 100%;
   background-color: #fff0cc;
   padding: 10px;
   border-radius: 25px;
@@ -296,7 +296,7 @@ h1 {
 }
 
 .column-three {
-  width: 30%;
+  width: 100%;
   background-color: #cceff9;
   padding: 10px;
   border-radius: 25px;
