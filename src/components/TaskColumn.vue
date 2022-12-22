@@ -1,7 +1,9 @@
 <template>
-  <div>
-
+  <div> 
     <h1>SPACEWARD</h1>
+    <img class="title" src="../assets/img/prueba-dash-movil.png" alt="background">
+
+   
 
     <div>
       <div class="tasks-columns">
@@ -134,6 +136,13 @@ export default {
 </script>
 
 <style scoped>
+.title{
+  width: 100vw;
+  position: relative;
+  z-index: 0;
+  top: 0;
+  margin-bottom: 50px;
+}
 .card-one-column {
   border-left: 10px solid #ff3a00;
 }
@@ -146,47 +155,33 @@ export default {
   border-left: 10px solid #00aee0;
 }
 
-.floated-galaxy {
-  display: flex;
-  align-self: flex-end;
-  margin-top: -40px;
-}
-.floated-galaxy img {
-  width: 50px;
-}
-.floated-rocket {
-  display: flex;
-  align-self: flex-end;
-  margin-top: -40px;
-}
-.floated-rocket img {
-  width: 50px;
-}
-.floated-flag img {
-  width: 50px;
-}
-.floated-flag {
-  display: flex;
-  align-self: flex-end;
-  margin-top: -40px;
-}
 .tasks-columns {
   display: block;
   justify-content: center;
   background-color: #04294f;
   border-radius: 30px;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 00px;
   margin-bottom: 20px;
 }
 
 h1 {
   text-align: center;
   font-weight: 800;
-  color: #273058;
+  color: #ffb400;
   padding: 10px;
-  margin-bottom: 0px;
-  margin-top: 15px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-left: 100px;
+  z-index: 1;
+ position: absolute;
+ background-color: #04294f;
+ border-radius:  20px  ;
+ border-bottom: 3px solid #ff3a00;
+box-shadow: 0px 5px 1px #ffb400;
+  
+ 
+
 }
 
 .todo-title {
