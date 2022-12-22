@@ -147,6 +147,10 @@ h2 {
   flex-direction: column;
 }
 
+.two-cards-desktop {
+  margin-top: 30px;
+}
+
 .what-is-spaceward {
   background-color: #04294f;
   width: 90vw;
@@ -314,6 +318,7 @@ h2 {
   margin-left: 10%;
   align-items: center;
   gap: 0px;
+  margin-top: 150px;
 }
 
 /* STARTS WHAT IS SPACEWARD */
