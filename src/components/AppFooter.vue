@@ -3,7 +3,7 @@
      <!-- style="background: linear-gradient(135deg, #F97794 10%, #623AA2 100%)" class="d-flex flex-direction-row justify-content-space-between" -->
    <footer>
    <div id="footerDiv"> 
-  <a href="#"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-yxwia&psig=AOvVaw0uHo2VVGnEUGbospjGzwWO&ust=1671215216860000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMjS5Pyf_PsCFQAAAAAdAAAAABAJ" alt="logo"></a> 
+  <a href="#"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-yxwia&psig=AOvVaw0uHo2VVGnEUGbospjGzwWO&ust=1671215216860000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMjS5Pyf_PsCFQAAAAAdAAAAABAJ" alt="spaceward-logo"></a> 
 
 
 
@@ -52,14 +52,16 @@
 <style scoped>
 #footerDiv{
   margin-top:40px;
+  margin-bottom: 10px;
   padding: 5px;
   display:flex;
+  font-family: 'Poppins';
   flex-direction:column;
   align-items: center;
-  font-weight: lighter;
-  font-size: 0,2em;
+  font-weight:normal;
+  
   width:100%;
-  bottom:0;
+  bottom:0; 
   height:150px;
   line-height: 150%;
 }
@@ -70,11 +72,12 @@ ul {
 }
 .list-column {
   text-align: center;
+  font-size: 12px;
   
 }
 li a{
   text-decoration: none;
-  color:white;
+  color:#190c3d;
 }
 
 .list-row ul{
@@ -83,7 +86,7 @@ li a{
   justify-content: space-between;
   align-content:center;
   
-
+  font-size: 12px;
 }
 .list-row li{
   margin-right: 10px;
@@ -91,7 +94,7 @@ li a{
  
 }
 a:hover{
-  color:#e96879;
+  color:#ff4603;
 }
 /** DESKTOP STARTS HERE **/
 @media (min-width: 765px) {
@@ -100,9 +103,10 @@ a:hover{
     flex-direction: row;
     justify-content: space-around;
     align-content:center;
-   margin-bottom:15px;
-   padding-top: 60px;;
+   margin-bottom:25px;
+   padding-top: 20px;;
   height:60px;
+  box-sizing: none;
   
     
   }
