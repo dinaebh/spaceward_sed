@@ -1,10 +1,10 @@
 <template>
+  
   <div>
     <PasswordReset />
-    <RouterLink to="/loginscreen" class="text-decoration-none">
-      Return to log in</RouterLink>
+    
   </div>
-  <AppFooter />
+  <div class="fixed-footer"><AppFooter /></div>
 </template>
 
 <script>
@@ -20,4 +20,19 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+#right{
+  display:block;
+
+}
+
+  
+
+.fixed-footer{
+  position: fixed;
+  bottom:0; 
+  width:100%;
+}
+  
+</style>
