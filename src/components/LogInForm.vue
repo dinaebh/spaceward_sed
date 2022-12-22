@@ -251,6 +251,5 @@ body {
   text-shadow: 1px 1px 2px #427388;
 }
 
-.login-button-and-signup {
-}
+
 </style>
