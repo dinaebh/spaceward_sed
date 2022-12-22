@@ -18,6 +18,18 @@
           <span class="text" >Settings</span>
         </a>
       </li>
+      <li class="list" :class="{ active: isActive3 }">
+        <a href="#" style="--clr: #174e78" @click="IsActive(3)">
+          <span class="icon"><i class="fa-solid fa-gear"></i></span>
+          <span class="text" >Settings</span>
+        </a>
+      </li>
+      <li class="list" :class="{ active: isActive3 }">
+        <a href="#" style="--clr: #174e78" @click="IsActive(3)">
+          <span class="icon"><i class="fa-solid fa-gear"></i></span>
+          <span class="text" >Logout</span>
+        </a>
+      </li>
     </ul>
 </template>
 <script>

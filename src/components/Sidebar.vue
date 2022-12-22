@@ -66,7 +66,7 @@ body {
   width: 100%;
   height: 60px;
   padding: 0 23px;
-  border-bottom: 1px solid rgb(0, 0, 0, 0.25);
+  /* border-bottom: 1px solid rgb(0, 0, 0, 0.25); */
   display: flex;
   justify-content: flex-start;
   align-items: center;

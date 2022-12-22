@@ -20,11 +20,18 @@
         <li class="list" style="--clr:#00e0a3" :class="{ active: isActive4 }" @click="IsActive(4)">
           <a href="#" >
             <span class="icon"
-              ><i class="fa-solid fa-right-from-bracket"></i
+              ><i class="fa-solid fa-rocket"></i
             ></span>
           </a>
         </li>
-        <div class="indicator"></div>
+        <li class="list" style="--clr:#fff" :class="{ active: isActive5 }" @click="IsActive(5)">
+          <a href="#" >
+            <span class="icon"
+              ><i class="fa-solid fa-right-from-bracket"></i>
+            </span>
+          </a>
+        </li>
+        <div class="indicator" ></div>
       </ul>
     </div>
   </div>
@@ -38,6 +45,8 @@ export default{
             isActive2: false,
             isActive3: false,
             isActive4: false,
+            isActive5: false,
+            
         }
     },
     methods:{
@@ -47,22 +56,32 @@ export default{
         this.isActive2 = false;
         this.isActive3 = false;
         this.isActive4 = false;
+        this.isActive5 = false;
 
       } if(num == 2) {
         this.isActive2 = !this.isActive2
         this.isActive = false;
         this.isActive3 = false;
         this.isActive4 = false;
+        this.isActive5 = false;
       } if(num == 3) {
         this.isActive3 = !this.isActive3
         this.isActive2 = false;
         this.isActive = false;
         this.isActive4 = false;
+        this.isActive5 = false;
       } if(num == 4) {
         this.isActive4 = !this.isActive3
         this.isActive2 = false;
         this.isActive = false;
         this.isActive3 = false;
+        this.isActive5 = false;
+      } if(num == 5) {
+        this.isActive5 = !this.isActive3
+        this.isActive2 = false;
+        this.isActive = false;
+        this.isActive3 = false;
+        this.isActive4 = false;
       }
     },
     }
@@ -75,12 +94,7 @@ export default{
   padding: 0;
   box-sizing: border-box;
 }
-.body{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; */
-}
+
 .navigation{
     position: relative;
     width: 100vw;
@@ -199,5 +213,9 @@ export default{
 }
 .navigation ul li:nth-child(4).active ~ .indicator{
     transform: translateX(calc(70px* 3));
+}
+
+.navigation ul li:nth-child(5).active ~ .indicator{
+    transform: translateX(calc(70px* 4));
 }
 </style>

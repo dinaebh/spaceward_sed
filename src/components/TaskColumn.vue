@@ -117,6 +117,7 @@ export default {
       editing: false,
       value: "",
       newTask: true,
+      draggable: true,
     };
   },
   computed: {
@@ -270,10 +271,11 @@ h1 {
 }
 
 .column-one {
-  width: 30%;
+  width: 95%;
   background-color: #ffd8cc;
   padding: 10px;
   border-radius: 25px;
+  margin-left: 12px ;
   margin-bottom: 20px;
   display: flex;
   flex-wrap: nowrap;
@@ -283,10 +285,11 @@ h1 {
 }
 
 .column-two {
-  width: 30%;
+  width: 95%;
   background-color: #fff0cc;
   padding: 10px;
   border-radius: 25px;
+  margin-left:12px ;
   margin-bottom: 20px;
   display: flex;
   flex-wrap: nowrap;
@@ -296,10 +299,11 @@ h1 {
 }
 
 .column-three {
-  width: 30%;
+  width: 95%;
   background-color: #cceff9;
   padding: 10px;
   border-radius: 25px;
+  margin-left: 12px ;
   margin-bottom: 20px;
   display: flex;
   flex-wrap: nowrap;
@@ -323,9 +327,7 @@ h1 {
 .newtaskbutton.active {
   border-radius: 20px 20px 0px 0px;
 }
-.newtaskbutton:hover {
-  /* box-shadow: 0px 0px 8px #c8c8c8; */
-}
+
 .task {
   width: 100%;
   margin-right: auto ;
@@ -346,6 +348,18 @@ h1 {
   }
   .waves-header {
     margin-bottom: -83px;
+  }
+
+  .column-one{
+  width : 32%
+  }
+
+  .column-two{
+    width : 32%
+  }
+
+  .column-three{
+    width : 32%
   }
 }
 </style>

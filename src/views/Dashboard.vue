@@ -80,6 +80,9 @@ body {
   gap: 50px;
   
 }
+.navbar{
+  display: none;
+}
 
 }
 </style>
