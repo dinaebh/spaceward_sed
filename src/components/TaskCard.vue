@@ -182,14 +182,14 @@ textarea {
   border: 2px;
   border-radius: 3px;
   width: 100%;
-  background: #190c3d;
+  background: #adadad;
   /* box-shadow:0px 00px 3px #b92bdb; */
   /* box-sizing: border-box; */
 }
 
 input {
   border-style: none;
-  background-color: #190c3d;
+  background-color: #adadad;
   color: white;
   margin-top: 10px;
   margin-bottom: 4px;
