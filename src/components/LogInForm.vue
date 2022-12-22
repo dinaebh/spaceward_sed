@@ -1,8 +1,10 @@
 <template>
   <body>
- 
+
+    <div id="form-desktop">
     <img class="form-space" src="../assets/img/login-image.png" alt="login-astronaut-image" />
     <div class="form-background">
+      <div class="login-title">Log In <i class="or">or</i> Join Us!</div>
     <form @submit.prevent="logInCall()">
         <div class="form">
           <input
@@ -32,51 +34,17 @@
         <div class="login-button-and-singup">
           <button type="submit" class="login-button">Log In</button>
           <a class="sign-up-link" href="/signupscreen">Sign Up</a>
-          <RouterLink to="/recoverpassword" class="forgot-password-link">
+          </div>
+          <div class="recover-password-box">
+        <RouterLink to="/recoverpassword" class="forgot-password-link">
             Forgot your password?
           </RouterLink>
         </div>
       </form>
+      <br>
     </div>
- 
+ </div>
   </body>
-  
-
-  <!-- <form class="container" @submit.prevent="logInCall()">
-    <div class="mb-3">
-      <input
-        type="email"
-        class="form-control"
-        id="exampleInputEmail1"
-        aria-describedby="emailHelp"
-        v-model="email"
-      />
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      
-      
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input
-        type="password"
-        class="form-control"
-        id="exampleInputPassword1"
-        v-model="password"
-      />
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Log In</button>
-
-    <div class="forgotpassword"><RouterLink to="/recoverpassword" class="text-decoration-none" >
-    Forgot your password?</RouterLink>
-    </div>
-  </form>
-  <RouterLink to="/recoverpassword" class="text-decoration-none">
-    Forgot your password?</RouterLink
-  > -->
 </template>
 
 <script>
@@ -124,20 +92,21 @@ body {
 
 .form-space {
   width: 90%;
-  margin-left: auto;
+  margin-left: 20px;
   margin-right: auto;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
   margin-top: 20px;
 }
 
 .form-background {
-  background-color: #00aee0;
+  background-color: #04294f;
   width: 90vw;
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 0px 0px 30px 30px;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 3px solid #ff3a00;
-  box-shadow: 0px 5px 1px #ffb400;
+  box-shadow: 0px 5px 1px #00aee0;
+  border-top: 5px solid #ffb400;
 }
 
 
@@ -145,7 +114,9 @@ body {
   position: relative;
   width: 15rem;
   height: 2.8rem;
-  margin: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form__input {
@@ -166,14 +137,14 @@ body {
 }
 
 .form__input:hover {
-  border-color: #ffb400;
+  border-color: white;
 }
 
 /* Change border when input focus*/
 
 .form__input:focus {
   border-color: #ffb400;
-  color: rgba(0, 225, 255, 0.342);
+  color: white;
 }
 
 .form__label {
@@ -181,10 +152,10 @@ body {
   left: 1rem;
   top: 0.6rem;
   padding: 0 0.5rem;
-  color: #ffb400;
+  color: white;
   cursor: text;
   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-  background-color: #ffffff;
+  background-color: #04294f;
   border-radius: 50px;
 }
 
@@ -203,21 +174,28 @@ body {
   margin-left: 5px;
 }
 
+.recover-password-box {
+  display: block;
+  text-align: center;
+}
+
 .forgot-password-link {
   font-size: 12px;
   text-decoration: none;
-  color: #ffb400;
+  color: #00aee0;
+  width: 100vw;
+  text-align: center;
 }
 
 .check-box-remember-me {
   display: flex;
   align-items: center;
-  justify-content: end;
-  padding-right: 10px;
+  justify-content: center;
+  margin-top: 5px;
 }
 
 .txt-remember-me {
-  color: black;
+  color: #00aee0;
   font-size: 10px;
   margin-left: 2px;
   text-transform: uppercase;
@@ -225,7 +203,7 @@ body {
 }
 
 .txt-remember-me:hover {
-  color: rgb(201, 4, 142);
+  color: #ff3a00;
 }
 
 .check-box {
@@ -234,23 +212,77 @@ body {
 
 .login-button {
   border: 0 solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  box-shadow: inset 0 0 60px #ffb400;
   outline: 1px solid;
-  outline-color: rgba(255, 255, 255, 0.5);
+  outline-color: #04294f;
   outline-offset: 0px;
   text-shadow: none;
+  padding: 5px 10px;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  color: white;
+  font-weight: 500;
+  background-color: #04294f;
 }
 
 .login-button:hover {
-  border: 1px solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+  border: 0px solid;
+  box-shadow: inset 0 0 20px #00aee0,
     0 0 20px rgba(255, 255, 255, 0.2);
-  outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 15px;
-  text-shadow: 1px 1px 2px #427388;
+  outline-color: #00aee0;
+  outline-offset: 5px;
+  text-shadow: 1px 1px 2px #00aee0;
 }
 
-.login-button-and-signup {
+.login-button-and-singup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sign-up-link {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+}
+
+@media (min-width: 765px) {
+
+  #form-desktop {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .form-space {
+    width: 30vw;
+    border-radius: 30px 0px 0px 30px;
+    border-bottom: 3px solid #ff3a00;
+  box-shadow: 0px 5px 1px #00aee0;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+  .form-background {
+  background-color: #04294f;
+  width: 50vw;
+  border-radius: 0px 30px 30px 0px;
+  border-bottom: 3px solid #ff3a00;
+  box-shadow: 0px 5px 1px #00aee0;
+  border-left: 10px solid #ffb400;
+  border-top: 0px solid #ffb400;
+  margin-bottom: 0px;
+  padding-top: 200px;
+}
+
+.login-title {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.or  {
+  color:#ffb400;
+}
+
 }
 </style>

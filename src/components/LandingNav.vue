@@ -36,4 +36,15 @@
     text-decoration: none;
 }
 
+@media (min-width: 765px) {
+    .top-nav {
+        padding: 40px;
+    }
+
+    .login-button {
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+}
+
 </style>
