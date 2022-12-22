@@ -50,8 +50,8 @@ const router = createRouter({
       component: LandingPage,
     },
     {
-      path: "/ErrorScreen",
-      name: "ErrosScreen",
+      path: "/:catchAll(.*)",
+      name: "404",
       component: ErrorScreen,
     },
 
@@ -69,6 +69,7 @@ router.beforeEach(async function(param) {
   }
   if (!isLoggedIn && param.name === "dashboard") {
     return "/landingpage";
-  }
+  } 
 })
+
 export default router;

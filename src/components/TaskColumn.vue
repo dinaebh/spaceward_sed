@@ -19,10 +19,10 @@
             class="task draggable"
             v-for="(task, index) of tasksStore.toDoTasks"
             :key="index"
-            draggable
+            :options="{handle:'.area'}" draggable
             @dragstart="startDrag($event, task)"
           >
-            <TaskCard :task="task" class="card-one-column"/>
+            <TaskCard :task="task" class="card-one-column" />
           </div>
 
           <button :class="{ active: newTask }" @click="newTask = !newTask" class="newtaskbutton">+</button>
@@ -287,13 +287,12 @@ box-shadow: 0px 5px 1px #ffb400;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    margin-top: 100px;
   }
-  .column {
-    width: 100%;
-    margin: 5px;
-  }
-  .waves-header {
-    margin-bottom: -83px;
+  
+
+  .title{
+    display: none;
   }
 
   .column-one{

@@ -13,7 +13,12 @@ export default defineStore("user", {
   getters: {
     isLoggedIn() {
       return this.user !== null;
-    }
+    },
+    userName() {
+      const name = this.user.filter((user) => 
+      user.name)
+      return name;
+    },
   },
 
   actions: {
@@ -22,7 +27,7 @@ export default defineStore("user", {
       this.user = user;
     },
 
-    async signUp(name, lastname, email, password) {
+    async signUp(name, lastname, username, email, password) {
       const response = await supabase.auth.signUp({
         email: email,
         password: password,
@@ -30,6 +35,7 @@ export default defineStore("user", {
           data:{
             first_name: name,
             last_name: lastname,
+            username: username,
           }
         }
         
@@ -122,6 +128,23 @@ export default defineStore("user", {
     async handleImageUpload(path){
       avatar_url.value = path;
       await updateProfile({first_name, last_name, avatar_url: path})
+    },
+
+    async editUser(name, lastname, username, email, password, id) {
+      const { data: error } = await supabase
+
+        .from("tasks")
+        .update({ first_name: name, last_name: lastname, username: username, email: email, password:password })
+        .eq("id", id);
+
+        if (error) {
+          return alert(error);
+          }
+         if (data) {
+         this.user = data.user
+         this.fetchUser();
+           };
+      
     },
 
 

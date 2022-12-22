@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import SignOut from '../components/SignOut.vue';
 import TaskColumn from '../components/TaskColumn.vue';
 import { mapStores } from "pinia";
 import tasksStore from "../stores/task.js";
@@ -36,7 +35,6 @@ export default {
  
  
     components: {
-        SignOut,
         TaskColumn,
         Sidebar,
         Navbar,
