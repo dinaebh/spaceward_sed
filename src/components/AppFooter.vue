@@ -3,8 +3,8 @@
      <!-- style="background: linear-gradient(135deg, #F97794 10%, #623AA2 100%)" class="d-flex flex-direction-row justify-content-space-between" -->
    <footer>
    <div id="footerDiv"> 
-  <a href="#"><img src="../assets/img/logo-azul-navy.png" alt="spaceward-logo" class="logo-footer"></a> 
-
+    <RouterLink to="/landingpage"><img src="../assets/img/logo-azul-navy.png" alt="spaceward-logo" class="logo-footer">
+    </RouterLink>
 
 
   <!-- footer -->
