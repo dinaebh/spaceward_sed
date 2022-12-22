@@ -7,8 +7,15 @@
       src="../assets/img/astronaut-top.png"
       alt="astronaut-header"
     />
-    <p class="text-header">We know it's easy to get lost in space, so we created this web for you.
+    <div class="header-text-and-title">
+      <p class="text-header">We know it's easy to get lost in <i class="space-color">space</i>, so we created...
     </p>
+    <div class="wrapper">
+    <div class="typing-demo">
+      Spaceward
+    </div>
+</div>
+</div>
   </header>
   <br />
 
@@ -141,15 +148,7 @@ h2 {
 }
 
 .space-footer {
-  margin-top: 300px;
-}
-
-.header-background {
-  background-color: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 50px;
+  margin-top: 600px;
 }
 
 .header-image {
@@ -159,6 +158,14 @@ h2 {
 .astronaut-header {
   width: 45%;
   margin-top: 50px;
+}
+
+.header-background {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .top-stain {
@@ -173,11 +180,45 @@ h2 {
     color:#04294f;
     font-weight: 600;
     font-size: 11px;
-    width: 40%;
-    margin-top: 80px;
-    margin-left: -50px;
+    width: 70%;
+    margin-left: 25px;
+    margin-top: 0px;
     line-height: 90%;
+    margin-bottom: -11px;
   }
+
+.header-text-and-title {
+  width: 100%;
+  display: block;
+  /* line-height: 170%; */
+}
+
+.typing-demo {
+  width: 190px;
+  animation: typing 2s steps(9), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 32px;
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.space-color {
+  color: #ff3a00;
+}
 
 
 /** DESKTOP VERSION STARTS HERE **/
