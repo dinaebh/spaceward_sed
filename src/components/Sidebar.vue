@@ -32,7 +32,7 @@ export default {
 </script>
 <style>
 :root {
-  --bg: #190c3d;
+  --bg: #f6f7f1;
 }
 </style>
 <style scoped>
@@ -52,6 +52,7 @@ body {
   inset: 40px 0 40px 20px;
   background: #fff;
   width: 75px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
