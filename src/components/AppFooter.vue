@@ -3,7 +3,7 @@
      <!-- style="background: linear-gradient(135deg, #F97794 10%, #623AA2 100%)" class="d-flex flex-direction-row justify-content-space-between" -->
    <footer>
    <div id="footerDiv"> 
-  <a href="#"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-yxwia&psig=AOvVaw0uHo2VVGnEUGbospjGzwWO&ust=1671215216860000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMjS5Pyf_PsCFQAAAAAdAAAAABAJ" alt="spaceward-logo"></a> 
+  <a href="#"><img src="../assets/img/logo-azul-navy.png" alt="spaceward-logo" class="logo-footer"></a> 
 
 
 
@@ -58,6 +58,8 @@
   font-family: 'Poppins';
   flex-direction:column;
   align-items: center;
+  align-content: center;
+  justify-content: center;
   font-weight:normal;
   
   width:100%;
@@ -65,7 +67,9 @@
   height:150px;
   line-height: 150%;
 }
-
+.logo-footer{
+  width: 30px;
+}
 ul {
   padding: 0;
   
@@ -94,7 +98,7 @@ li a{
  
 }
 a:hover{
-  color:#ff4603;
+  color:#ff3a00;
 }
 /** DESKTOP STARTS HERE **/
 @media (min-width: 765px) {
@@ -102,7 +106,8 @@ a:hover{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content:center;
+
+
    margin-bottom:25px;
    padding-top: 20px;;
   height:60px;
@@ -110,13 +115,16 @@ a:hover{
   
     
   }
+  .logo-footer{
+    width:50px;
+  }
   .list-column{
   width:50%;
   }
   .list-column ul{
     display:flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
    
     justify-content: space-around;
   }

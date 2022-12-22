@@ -296,7 +296,7 @@ h2 {
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
   padding: 7px;
   margin-left: 2px;
-  border-radius:4px;
+
 }
 
 .signup-button:hover {
