@@ -1,7 +1,7 @@
 <template>
   <body>
     <div class="background-form"> 
-  <h3 id="#txt" class="signup">Sign Up</h3>
+  <h2 id="#txt" class="signup">Sign Up</h2>
  
     <form class="container" @submit.prevent="signUpCall()">
       <div class="form">
@@ -147,6 +147,8 @@ font-weight: bolder;
 margin-right: 0px;
 
 }
+
+
 .form {
   position: relative;
   width: 18rem;

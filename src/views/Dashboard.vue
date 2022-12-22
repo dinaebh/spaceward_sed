@@ -56,12 +56,6 @@ body {
   bottom: -10px;
   left: 0px;
 }
-.dash-body{
-  display: block;
-  flex-direction: row;
-  gap: 50px;
-  
-}
 .sidebar{
   display:none;
 }
