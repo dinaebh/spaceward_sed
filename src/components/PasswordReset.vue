@@ -38,31 +38,7 @@
   
   </body>
 
-  <!-- <h1>Can't log in?</h1>
-  <form @submit.prevent="passwordReset">
-    <div class="row g-3 align-items-center">
-      <div class="col-auto">
-        <label for="inputPassword6" class="col-form-label"
-          >We'll send a recovery link to:</label
-        >
-      </div>
-      <div class="col-auto">
-        <input
-          v-model="email"
-          type="email"
-          id="inputPassword6"
-          class="form-control"
-          aria-describedby="passwordHelpInline"
-          placeholder="Enter your email"
-        />
-      </div>
-      <div class="col-auto">
-        <span id="passwordHelpInline" class="form-text"> </span>
-        <button type="submit">Send recovery link</button>
-      </div>
-      <div></div>
-    </div>
-  </form>-->
+ 
 </template> 
 <script>
 import { mapStores } from "pinia";
