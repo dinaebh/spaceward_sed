@@ -22,18 +22,19 @@
   <div class="two-cards-desktop">
   <div class="astronaut-img-and-description">
     <div class="what-is-spaceward">
-      <div>
+      <div class="photo-desciption-desktop">
+      <img
+        class="astronaut-tasks-img"
+        src="../assets/img/what-is-spaceward.png"
+        alt="astronaut-img"
+      />
+      <div class="description-and-title">
         <h2>
           What is
           <p>Spaceward?</p>
         </h2>
-      </div>
-      <div class="photo-desciption-desktop">
-      <img
-        class="astronaut-tasks-img"
-        src="../assets/img/astronaut-tasks.png"
-        alt="astronaut-img"
-      />
+      
+      
       <div class="spaceward-description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Aliquet risus
@@ -42,6 +43,7 @@
         pharetra convallis. Massa enim nec dui nunc mattis enim ut. Consequat
         interdum varius sit amet mattis vulputate enim nulla aliquet.
       </div>
+    </div>
     </div>
   </div>
 </div>
@@ -133,6 +135,9 @@ h2 {
 .astronaut-tasks-img {
   width: 80vw;
   margin: auto;
+  border-radius: 30px;
+  border: 5px solid white;
+  margin-bottom: 5px;
 }
 
 .astronaut-img-and-description {
@@ -318,8 +323,11 @@ h2 {
 }
 
 .astronaut-tasks-img {
-  width: 20vw;
+  width: 19vw;
   margin: auto;
+  border-radius: 35px;
+  border: 5px solid white;
+  margin-left: 0px;
 }
 
 .astronaut-img-and-description {
@@ -406,6 +414,17 @@ h2 {
   font-size: 100px;
   font-family: 'Poppins';
   font-weight: 700;
+}
+
+.description-and-title {
+  display: block;
+  flex-direction: column;
+  width: 600px;
+}
+
+.photo-desciption-desktop {
+  display: flex;
+
 }
 
 }
