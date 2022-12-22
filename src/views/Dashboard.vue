@@ -45,9 +45,6 @@ export default {
 </script>
 
 <style scoped>
-body {
-  background-color: #f6f7f1;
-}
 
 .navbar{
   display: flex;
@@ -55,12 +52,6 @@ body {
   position: fixed;
   bottom: -10px;
   left: 0px;
-}
-.dash-body{
-  display: block;
-  flex-direction: row;
-  gap: 50px;
-  
 }
 .sidebar{
   display:none;
@@ -78,6 +69,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 50px;
+
   
 }
 .navbar{

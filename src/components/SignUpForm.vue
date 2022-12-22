@@ -190,6 +190,8 @@ h2 {
   font-weight: bolder;
   margin-right: 0px;
 }
+
+
 .form {
   position: relative;
   width: 18rem;
