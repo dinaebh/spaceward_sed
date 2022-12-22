@@ -1,6 +1,6 @@
 <template>
     <div class="top-nav">
-        <img src="../assets/img/logo-final.png" alt="photo-logo" width="50" />
+        <img src="../assets/img/logo-rojo.png" alt="photo-logo" width="50" />
         <a href="#log-in" class="login-button">Log In</a>
     </div>
 </template>
