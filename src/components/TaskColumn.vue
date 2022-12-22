@@ -226,11 +226,10 @@ h1 {
 }
 
 .column-one {
-  width: 95%;
+  width: 100%;
   background-color: #ffd8cc;
   padding: 10px;
   border-radius: 25px;
-  margin-left: 12px ;
   margin-bottom: 20px;
   display: flex;
   flex-wrap: nowrap;
@@ -240,11 +239,10 @@ h1 {
 }
 
 .column-two {
-  width: 95%;
+  width: 100%;
   background-color: #fff0cc;
   padding: 10px;
   border-radius: 25px;
-  margin-left:12px ;
   margin-bottom: 20px;
   display: flex;
   flex-wrap: nowrap;
@@ -254,11 +252,10 @@ h1 {
 }
 
 .column-three {
-  width: 95%;
+  width: 100%;
   background-color: #cceff9;
   padding: 10px;
   border-radius: 25px;
-  margin-left: 12px ;
   margin-bottom: 20px;
   display: flex;
   flex-wrap: nowrap;
