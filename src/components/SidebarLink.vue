@@ -3,22 +3,22 @@
 <ul >
   
       <li class="list" :class="{ active: isActive }">
-        <a href="#" style="--clr : #ff3a00" @click="IsActive(1)">
-          <span class="icon"><i class="fa-solid fa-rocket"></i
+        <a href="#" style="--clr : #ff3a00" @click="IsActive(1), toLanding()">
+          <span class="icon" ><i class="fa-solid fa-rocket" ></i
             ></span>
-          <span class="text">Dashboard</span>
+          <span class="text">Landing Page</span>
         </a>
       </li>
       <li class="list" :class="{ active: isActive2 }">
-        <a href="#" style="--clr: #ffb400" @click="IsActive(2)">
+        <a href="#" style="--clr: #ffb400" @click="IsActive(2), toDashboard()">
           <span class="icon"><i class="fa-solid fa-house"></i></span>
-          <span class="text">Profile</span>
+          <span class="text">Dashboard</span>
         </a>
       </li>
       <li class="list" :class="{ active: isActive3 }">
-        <a href="#" style="--clr: #00aee0" @click="IsActive(3)">
+        <a href="#" style="--clr: #00aee0" @click="IsActive(3) ">
           <span class="icon"><i class="fa-regular fa-user"></i></span>
-          <span class="text" >Settings</span>
+          <span class="text" >Profile</span>
         </a>
       </li>
       <li class="list" :class="{ active: isActive4 }">
@@ -28,7 +28,7 @@
         </a>
       </li>
       <li class="list" :class="{ active: isActive5 }">
-        <a href="#" style="--clr: #04294f" @click="IsActive(5)">
+        <a href="#" style="--clr: #04294f" @click="IsActive(5), logOut()">
           <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
           <span class="text" >Logout</span>
         </a>
@@ -38,6 +38,9 @@
  
 </template>
 <script>
+
+import { mapStores } from "pinia";
+import userStore from "../stores/user.js";
 export default{
     data(){
         return{
@@ -50,6 +53,10 @@ export default{
           
     }
 },
+computed: {
+    ...mapStores(userStore),
+  },
+
     methods:{
         IsActive(num) {
       if(num == 1){
@@ -85,6 +92,22 @@ export default{
         this.isActive3 = false;
       } 
     },
+    toLanding(){
+    this.$router.push('/landingpage')
+  },
+  toDashboard(){
+    this.$router.push('/')
+  },
+  toUser(){
+    this.$router.push('/userscreen')
+  },
+  logOut() {
+      this.userStore.signOut();
+    },
+  
+
+  
+
     
       
     }

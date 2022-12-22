@@ -2,30 +2,31 @@
   <div class="body">
     <div class="navigation">
       <ul>
-        <li class="list" style="--clr:#ff3a00" :class="{ active: isActive }"  @click="IsActive(1)">
-          <a href="#" >
-            <span class="icon"><i class="fa-solid fa-house"></i></span>
-          </a>
-        </li>
-        <li class="list" style="--clr:#ffb400" :class="{ active: isActive2 }" @click="IsActive(2)">
-          <a href="#" >
-            <span class="icon"><i class="fa-regular fa-user"></i></span>
-          </a>
-        </li>
-        <li class="list" style="--clr:#00aee0" :class="{ active: isActive3 }" @click="IsActive(3)">
-          <a href="#" >
-            <span class="icon"><i class="fa-solid fa-gear"></i></span>
-          </a>
-        </li>
-        <li class="list" style="--clr:#00e0a3" :class="{ active: isActive4 }" @click="IsActive(4)">
+        <li class="list" style="--clr:#00e0a3" :class="{ active: isActive }" @click="IsActive(1), toLanding()">
           <a href="#" >
             <span class="icon"
               ><i class="fa-solid fa-rocket"></i
             ></span>
           </a>
         </li>
-        <li class="list" style="--clr:#fff" :class="{ active: isActive5 }" @click="IsActive(5)">
+        <li class="list" style="--clr:#ff3a00" :class="{ active: isActive2 }"  @click="IsActive(2), toDashboard()">
           <a href="#" >
+            <span class="icon"><i class="fa-solid fa-house"></i></span>
+          </a>
+        </li>
+        <li class="list" style="--clr:#ffb400" :class="{ active: isActive3 }" @click="IsActive(3) ">
+          <a href="#" >
+            <span class="icon"><i class="fa-regular fa-user"></i></span>
+          </a>
+        </li>
+        <li class="list" style="--clr:#00aee0" :class="{ active: isActive4 }" @click="IsActive(4)">
+          <a href="#" >
+            <span class="icon"><i class="fa-solid fa-gear"></i></span>
+          </a>
+        </li>
+        
+        <li class="list" style="--clr:#fff" :class="{ active: isActive5 }" @click="IsActive(5), logOut()">
+          <a href="#">
             <span class="icon"
               ><i class="fa-solid fa-right-from-bracket"></i>
             </span>
@@ -38,6 +39,8 @@
 </template>
 
 <script>
+import { mapStores } from "pinia";
+import userStore from "../stores/user.js";
 export default{
     data(){
         return{
@@ -49,6 +52,9 @@ export default{
             
         }
     },
+    computed: {
+    ...mapStores(userStore),
+  },
     methods:{
         IsActive(num) {
       if(num == 1){
@@ -84,7 +90,19 @@ export default{
         this.isActive4 = false;
       }
     },
-    }
+    toLanding(){
+    this.$router.push('/landingpage')
+  },
+  toDashboard(){
+    this.$router.push('/')
+  },
+  toUser(){
+    this.$router.push('/userscreen')
+  },
+  logOut() {
+      this.userStore.signOut();
+    },
+    },
 }
 </script>
 

@@ -145,6 +145,7 @@ export default {
       this.userStore.signUp(
         this.name,
         this.lastname,
+        this.username,
         this.email,
         this.password
       );
