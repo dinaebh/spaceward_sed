@@ -7,6 +7,7 @@ import UserScreen from "../views/UserScreen.vue"
 import PasswordReset from "../views/RecoverScreen.vue";
 import NewPassword from "../views/PasswordScreen.vue";
 import LandingPage from "../views/LandingPage.vue";
+import ErrorScreen from "../views/ErrorScreen.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -47,6 +48,11 @@ const router = createRouter({
       path: "/landingpage",
       name: "landingpage",
       component: LandingPage,
+    },
+    {
+      path: "/ErrorScreen",
+      name: "ErrosScreen",
+      component: ErrorScreen,
     },
 
   ],
