@@ -130,7 +130,7 @@ body {
   border-radius: 0.5rem;
   font-family: inherit;
   font-size: 13px;
-  color: #ff3a00;
+  color: #ffb400;
   outline: none;
   padding: 1.25rem;
   background: none;
