@@ -1,6 +1,8 @@
 <template>
   <body>
-  <div class="background-form">
+    <div class="background-form"> 
+  <h3 id="#txt" class="signup">Sign Up</h3>
+ 
     <form class="container" @submit.prevent="signUpCall()">
       <div class="form">
     <input type="text" id="name" class="form__input" placeholder=" " v-model="name">
@@ -25,8 +27,8 @@
   <div class="check-box-remember-me"><input type="checkbox" class="check-box" />
   <label class="txt-remember-me">Remember Me</label></div>
   <br>
-  <div class="login-button-and-singup">
-    <button type="submit" class="login-button">Sign Up</button>
+  <div class="signup-button-and-password">
+    <button type="submit" class="signup-button">Sign Up</button>
   <RouterLink to="/landingpage" class="forgot-password-link">
   Already registered?
   </RouterLink>
@@ -110,6 +112,7 @@ export default {
 };
 </script>
 
+
 <style scoped>
 *,
 *::before,
@@ -120,30 +123,36 @@ export default {
 }
 
 body {
-  font-family: Manrope;
+  font-family: 'Poppins', sans-serif;
   height: 1vh;
   display: grid;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  
   background: none;
 }
 .background-form{
+  position: relative;
+  background-color: #190c3d;
+  padding: 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap:20px
 }
-form{
-margin-top: 100px;
-  width:350px;
-  background-color: rgb(255, 203, 106);
-  padding:50px;
+#txt .signup {
+  color: white;
+  width: fit-content;
+font-size: 50px;
+font-weight: bolder;
+margin-right: 0px;
+
 }
 .form {
   position: relative;
-  width: 15rem;
+  width: 18rem;
   height: 2.8rem;
   margin-bottom: 10px;
+  
 }
   .form__input {
     position: absolute;
@@ -194,17 +203,13 @@ margin-top: 100px;
   color: rgb(201, 4, 142);
 }
 
-.we-never-share-txt {
-  color: white;
-  font-size: 10px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-}
+
 
 .forgot-password-link {
   font-size: 12px;
   text-decoration: none;
   color: white;
+  margin-left: 20px;
 }
 
 .check-box-remember-me {
@@ -234,7 +239,7 @@ margin-top: 100px;
   padding: 20px;
 }
 
-.login-button {
+.singup-button {
   border: 0 solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
@@ -244,7 +249,7 @@ margin-top: 100px;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 } 
 
-.login-button:hover {
+.singup-button:hover {
   border: 1px solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
   outline-color: rgba(255, 255, 255, 0);
@@ -252,7 +257,35 @@ margin-top: 100px;
   text-shadow: 1px 1px 2px #427388; 
 }
 
-.login-button-and-signup {
+.singup-button-and-signup {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-bottom: 20px;
+gap:20px;
 
+
+}
+.singup-button-and-signup password{
+  margin-bottom: 10px;
+} 
+
+/* DESKTOP STARTS HERE*/
+
+@media (min-width: 765px){
+#txt .signup{
+  color: white;
+  box-sizing: border-box;
+  width: auto;
+}
+.background-form{
+  position: relative;
+  background-color: #190c3d;
+  padding: 50px;
+  width: 400px;
+  align-self:baseline;
+  padding-top: 100px;
+ 
+}
 }
 </style>

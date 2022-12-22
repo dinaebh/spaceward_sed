@@ -30,14 +30,7 @@
         feugiat in ante metus dictum at tempor. Tortor vitae purus faucibus
         ornare suspendisse sed nisi lacus. Fames ac turpis egestas maecenas
         pharetra convallis. Massa enim nec dui nunc mattis enim ut. Consequat
-        interdum varius sit amet mattis vulputate enim nulla aliquet. Convallis
-        posuere morbi leo urna molestie at elementum eu. In iaculis nunc sed
-        augue lacus viverra vitae congue eu. Donec enim diam vulputate ut
-        pharetra sit amet aliquam id. Curabitur gravida arcu ac tortor. Diam
-        maecenas ultricies mi eget mauris pharetra et ultrices. Gravida in
-        fermentum et sollicitudin ac orci phasellus egestas. Eu mi bibendum
-        neque egestas congue quisque. Aliquet porttitor lacus luctus accumsan
-        tortor. Vel eros donec ac odio. Gravida arcu ac tortor dignissim.
+        interdum varius sit amet mattis vulputate enim nulla aliquet. 
       </div>
     </div>
   </div>
@@ -101,13 +94,15 @@ export default {
 h2 {
   color: white;
   border-bottom: 1px solid white;
-  width: 60vw;
-  font-size: 40px;
+  width: 72vw;
+  font-size: 35px;
   line-height: 80%;
   letter-spacing: 5px;
-  margin-left: 10%;
+  margin-left: 5%;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .astronaut-img {
@@ -132,6 +127,8 @@ h2 {
   width: 90vw;
   padding: 20px;
   border-radius: 30px;
+  border-bottom: 3px solid #ff3a00;
+  box-shadow: 0px 5px 1px #ffb400;
 }
 
 .astronaut-img-and-description-desktop {
@@ -140,12 +137,13 @@ h2 {
 
 .spaceward-description {
   color: white;
-  width: 80vw;
+  width: 70vw;
   font-size: 11px;
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .space-footer {

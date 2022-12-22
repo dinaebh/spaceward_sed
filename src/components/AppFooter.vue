@@ -57,7 +57,7 @@
   flex-direction:column;
   align-items: center;
   font-weight: lighter;
-  font-size: 0,4em;
+  font-size: 0,2em;
   width:100%;
   bottom:0;
   height:150px;
