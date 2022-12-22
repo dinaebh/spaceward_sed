@@ -1,15 +1,16 @@
 <template>
-    <LandingNav />
-   
-    <header class="header-background">
-      <img
-        class="astronaut-img"
-        src="../assets/img/astronautmain.png"
-        alt="astronaut-img"
-      />
-    </header>
-    <br>
-
+  <LandingNav />
+  <img class="top-stain" src="../assets/img/top-stain.png" alt="top-stain" />
+  <header class="header-background">
+    <img
+      class="astronaut-header"
+      src="../assets/img/astronaut-top.png"
+      alt="astronaut-header"
+    />
+    <p class="text-header">We know it's easy to get lost in space, so we created this web for you.
+    </p>
+  </header>
+  <br />
 
   <div class="astronaut-img-and-description">
     <div class="what-is-spaceward">
@@ -30,18 +31,12 @@
         feugiat in ante metus dictum at tempor. Tortor vitae purus faucibus
         ornare suspendisse sed nisi lacus. Fames ac turpis egestas maecenas
         pharetra convallis. Massa enim nec dui nunc mattis enim ut. Consequat
-        interdum varius sit amet mattis vulputate enim nulla aliquet. 
+        interdum varius sit amet mattis vulputate enim nulla aliquet.
       </div>
     </div>
   </div>
 
-  
   <div class="astronaut-img-and-description-desktop">
-    <img
-      class="astronaut-img"
-      src="../assets/img/astronautmain.png"
-      alt="astronaut-img"
-    />
     <div class="what-is-spaceward">
       <div>
         <h2>
@@ -66,12 +61,12 @@
       </div>
     </div>
   </div>
-  
+
   <div id="log-in">
     <LogInForm />
-</div>
-<div class="space-footer">
-  <AppFooter />
+  </div>
+  <div class="space-footer">
+    <AppFooter />
   </div>
 </template>
 
@@ -90,7 +85,6 @@ export default {
 </script>
 
 <style>
-
 h2 {
   color: white;
   border-bottom: 1px solid white;
@@ -99,7 +93,7 @@ h2 {
   line-height: 80%;
   letter-spacing: 5px;
   margin-left: 5%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -152,14 +146,38 @@ h2 {
 
 .header-background {
   background-color: none;
-  width: 100vw;
-  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .header-image {
   width: 300px;
 }
 
+.astronaut-header {
+  width: 45%;
+  margin-top: 50px;
+}
+
+.top-stain {
+  width: 100vw;
+  z-index: -7;
+  position: absolute;
+  top: 0px;
+}
+
+.text-header {
+    font-size: 'Poppins';
+    color:#04294f;
+    font-weight: 600;
+    font-size: 11px;
+    width: 40%;
+    margin-top: 80px;
+    margin-left: -50px;
+    line-height: 90%;
+  }
 
 
 /** DESKTOP VERSION STARTS HERE **/
