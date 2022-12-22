@@ -1,7 +1,9 @@
 <template>
   <body>
-    <div class="form-space">
-      <form @submit.prevent="logInCall()">
+ 
+    <img class="form-space" src="../assets/img/login-image.png" alt="login-astronaut-image" />
+    <div class="form-background">
+    <form @submit.prevent="logInCall()">
         <div class="form">
           <input
             type="email"
@@ -36,6 +38,7 @@
         </div>
       </form>
     </div>
+ 
   </body>
   
 
@@ -118,21 +121,31 @@ body {
   font-size: 1.2rem;
 }
 
+
 .form-space {
-  background-color: #cceff9;
-  margin-top: 30px;
-  padding: 30px;
-  width: 100vw;
-  display: block;
-  justify-content: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px 15px 0px 0px;
+  margin-top: 20px;
 }
+
+.form-background {
+  background-color: #00aee0;
+  width: 90vw;
+  border-radius: 0px 0px 15px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #ff3a00;
+  box-shadow: 0px 5px 1px #ffb400;
+}
+
 
 .form {
   position: relative;
   width: 15rem;
   height: 2.8rem;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 10px;
 }
 
 .form__input {
