@@ -45,9 +45,6 @@ export default {
 </script>
 
 <style scoped>
-body {
-  background-color: #f6f7f1;
-}
 
 .navbar{
   display: flex;
@@ -72,6 +69,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 50px;
+
   
 }
 .navbar{

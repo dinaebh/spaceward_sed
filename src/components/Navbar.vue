@@ -31,7 +31,7 @@
             </span>
           </a>
         </li>
-        <div class="indicator" ></div>
+        <div class="indicator"></div>
       </ul>
     </div>
   </div>
@@ -59,25 +59,25 @@ export default{
         this.isActive5 = false;
 
       } if(num == 2) {
-        this.isActive2 = !this.isActive2
+        this.isActive2 = !this.isActive2;
         this.isActive = false;
         this.isActive3 = false;
         this.isActive4 = false;
         this.isActive5 = false;
       } if(num == 3) {
-        this.isActive3 = !this.isActive3
+        this.isActive3 = !this.isActive3;
         this.isActive2 = false;
         this.isActive = false;
         this.isActive4 = false;
         this.isActive5 = false;
       } if(num == 4) {
-        this.isActive4 = !this.isActive3
+        this.isActive4 = !this.isActive4;
         this.isActive2 = false;
         this.isActive = false;
         this.isActive3 = false;
         this.isActive5 = false;
       } if(num == 5) {
-        this.isActive5 = !this.isActive3
+        this.isActive5 = !this.isActive5;
         this.isActive2 = false;
         this.isActive = false;
         this.isActive3 = false;
@@ -127,8 +127,8 @@ export default{
     align-items: center;
     height: 100%;
     width: 100%;
-
 }
+
 .navigation ul li a .icon{
     position: relative;
     display: block;
@@ -149,24 +149,6 @@ export default{
     transform: translateY(-25px);
     transition-delay: 0.10s;
 }
-
-/* .navigation ul li a .icon::before{
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--clr);
-    border-radius: 50%;
-    opacity: 0;
-
-} */
-.navigation ul li.active a .icon::before{
-    opacity: 0.5;
-
-}
-
 .indicator{
     position: absolute;
     top: -28px;

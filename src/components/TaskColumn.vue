@@ -177,7 +177,7 @@ export default {
   border-radius: 30px;
   padding: 10px;
   margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -290,6 +290,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
   }
   .column {
