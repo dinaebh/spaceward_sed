@@ -1,4 +1,9 @@
 <template>
+  <header>
+  <div class="nav-header">
+  <img src="../assets/img/logo-rojo.png" alt="spaceward-logo" class="spaceward-logo">
+ <img src="../assets/img/top-stain.png" alt="top-stain" class="header-background">
+</div></header>
   <body>
     <div class="background-form">
       <h2 id="#txt" class="signup">Sign Up</h2>
@@ -68,51 +73,7 @@
       </form>
     </div>
 
-    <!-- <form class="container" @submit.prevent="signUpCall()">
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Name</label>
-      <input
-        type="text"
-        class="form-control"
-        id="exampleInputEmail1"
-        aria-describedby="emailHelp"
-        v-model="name"
-      />
-      <label for="exampleInputEmail1" class="form-label">Lastname</label>
-      <input
-        type="text"
-        class="form-control"
-        id="exampleInputEmail1"
-        aria-describedby="emailHelp"
-        v-model="lastname"
-      />
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input
-        type="email"
-        class="form-control"
-        id="exampleInputEmail1"
-        aria-describedby="emailHelp"
-        v-model="email"
-      />
-      <div id="emailHelp" class="form-text">
-        We'll never share your email with anyone else.
-      </div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input
-        type="password"
-        class="form-control"
-        id="exampleInputPassword1"
-        v-model="password"
-      />
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Sign Up</button>
-  </form> -->
+  
   </body>
 </template>
 
@@ -157,6 +118,22 @@ export default {
   padding: 0;
 }
 
+.spaceward-logo{
+  width:30px;
+  padding: 5px;
+  margin-left: 30px;
+}
+.nav-header{
+  display: flex;
+  margin-top:3px;
+  flex-direction: column;
+  align-items:flex-start;
+
+}
+.header-background{
+display:none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   height: 1vh;
@@ -166,14 +143,19 @@ body {
 
   background: none;
 }
+
 .background-form {
+  
   position: relative;
   background-color: #04294f;
   padding: 50px;
   display: flex;
   flex-direction: column;
+  border-radius: 30px;
+  border-bottom:3px solid #ff3a00;
+  box-shadow:0px 5px 1px #ffb400;
   gap: 20px;
-  margin-top: 2rem;
+  
 }
 h2 {
   color: white;
@@ -316,6 +298,13 @@ h2 {
 /* DESKTOP STARTS HERE*/
 
 @media (min-width: 765px) {
+
+  .nav-header{
+  display:inline;
+  flex-direction:row;
+  justify-content: space-between;
+  
+}
   #txt .signup {
     color: white;
     box-sizing: border-box;
@@ -332,5 +321,23 @@ h2 {
     margin-top: 40%;
     padding-top: 100px;
   }
+
+  .header-background {
+  background-color: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0px;
+  width: 400px;
+}
+}
+.header-background{
+  position:absolute;
+  top:0;
+  right:0px;
+}
+.spaceward-logo{
+  width:100px;
+
 }
 </style>
