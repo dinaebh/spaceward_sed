@@ -248,6 +248,18 @@ body {
   padding: 5px 10px;
 }
 
+.login-title {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .or {
+    color: #ffb400;
+  }
+
 @media (min-width: 765px) {
   #form-desktop {
     display: flex;

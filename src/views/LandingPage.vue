@@ -36,12 +36,9 @@
       
       
       <div class="spaceward-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Aliquet risus
-        feugiat in ante metus dictum at tempor. Tortor vitae purus faucibus
-        ornare suspendisse sed nisi lacus. Fames ac turpis egestas maecenas
-        pharetra convallis. Massa enim nec dui nunc mattis enim ut. Consequat
-        interdum varius sit amet mattis vulputate enim nulla aliquet.
+        Space is infinite, so are your tasks. Spacewards gives you the opportunity to find your path and organize your daily life in a more efficient and clean way. 
+Doesn't matter what is about, if you have an idea or a project that you need to define and follow without missing a detail, spaceward is your trustable place to do it. 
+Keep reading for more features and don't hesitate on joining our growing family!
       </div>
     </div>
     </div>
@@ -190,6 +187,7 @@ h2 {
   align-items: center;
   margin-top: 50px;
   margin-bottom: 20px;
+  
 }
 
 .top-stain {

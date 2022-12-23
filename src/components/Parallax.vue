@@ -6,23 +6,23 @@
     <img src="../assets/img/card1.png" alt="comunication">
     <div class="container">
         <h4>Comunicate</h4>
-        <p>Connect with your friends and organize your projects together</p>
+        <p>Connect and engage with your friends throught one unique space where you can organize your projects, activities or even your leisure time.</p>
     </div>
    </div>
 
    <div class="card2 card">
     <img src="../assets/img/card2.png" alt="comunication">
     <div class="container">
-        <h4>Comunicate</h4>
-        <p>Connect with your friends and organize your projects together</p>
+        <h4>Organize</h4>
+        <p>Forget about the endless notebooks and lists scatered arround your workplace, now you can have everything in one place so organizing will result in a much easier work.</p>
     </div>
    </div>
 
    <div class="card3 card">
     <img src="../assets/img/card3.png" alt="comunication">
     <div class="container">
-        <h4>Comunicate</h4>
-        <p>Connect with your friends and organize your projects together</p>
+        <h4>Enjoy</h4>
+        <p>Now that you organize everything more efficiently, you can enjoy the free time you'll have doing what you love the most.</p>
     </div>
    </div>
 </div>
