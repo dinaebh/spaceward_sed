@@ -169,7 +169,7 @@ h2 {
 }
 
 .space-footer {
-  margin-top: 700px;
+  margin-top: 750px;
 }
 
 .header-image {
