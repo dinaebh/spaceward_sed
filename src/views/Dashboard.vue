@@ -1,16 +1,13 @@
 <template>
-
- <body>
-  
- 
+  <img class="dashboard-stain" src="../assets/img/top-stain.png" alt="galaxy-stain">
 <div class="dash-body">
   <Sidebar class="sidebar" />
-  <TaskColumn />
+  <TaskColumn class="task-column"/>
 </div>
 <div class="navbar">
 <Navbar/>
 </div>
-</body>
+
 </template>
 
 <script>
@@ -55,7 +52,9 @@ export default {
   display:none;
 }
 
-
+.dashboard-stain {
+  display: none;
+}
 
 @media (min-width: 765px) { 
 
@@ -72,6 +71,21 @@ export default {
 }
 .navbar{
   display: none;
+}
+
+.task-column {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.dashboard-stain {
+  display: inline;
+  width: 40%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -7;
 }
 
 }

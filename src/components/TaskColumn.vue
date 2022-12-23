@@ -5,7 +5,7 @@
 
    
 
-    <div>
+    <div class="all-board">
       <div class="tasks-columns">
         <!--columna uno-->
         <div
@@ -18,8 +18,8 @@
           <div
             class="task draggable"
             v-for="(task, index) of tasksStore.toDoTasks"
-            :key="index"
-            :options="{handle:'.area'}" draggable
+            :key="index" 
+            draggable="true"
             @dragstart="startDrag($event, task)"
           >
             <TaskCard :task="task" class="card-one-column" />
@@ -41,7 +41,7 @@
             class="task draggable"
             v-for="(task, index) of tasksStore.doingTasks"
             :key="index"
-            draggable
+            draggable="true"
             @dragstart="startDrag($event, task)"
           >
             <TaskCard :task="task" class="card-two-column" />
@@ -60,7 +60,7 @@
             class="task draggable"
             v-for="(task, index) of tasksStore.doneTasks"
             :key="index"
-            draggable
+            draggable="true"
             @dragstart="startDrag($event, task)"
           >
             <TaskCard :task="task" class="card-three-column" />
@@ -96,7 +96,6 @@ export default {
       editing: false,
       value: "",
       newTask: true,
-      draggable: true,
     };
   },
   computed: {
@@ -288,6 +287,7 @@ box-shadow: 0px 5px 1px #ffb400;
     align-items: flex-start;
     width: 100%;
     margin-top: 100px;
+    padding: 20px;
   }
   
 
@@ -309,6 +309,29 @@ box-shadow: 0px 5px 1px #ffb400;
 
   .draggable {
   cursor: move;
+}
+
+.all-board {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  color: #ffb400;
+  padding: 10px;
+  /* margin-bottom: 50px; */
+  margin-top: -20px;
+  margin-left: 0px;
+  z-index: 1;
+ position: absolute;
+ background-color: #04294f;
+ border-radius:  20px  ;
+ border-bottom: 3px solid #ff3a00;
+box-shadow: 0px 5px 1px #ffb400;
+
 }
 }
 </style>
