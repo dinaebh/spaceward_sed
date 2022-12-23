@@ -292,6 +292,7 @@ body {
     text-align: center;
     font-size: 25px;
     font-weight: 500;
+    margin-top: 0px;
   }
 
   .or {
