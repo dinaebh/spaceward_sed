@@ -36,7 +36,7 @@
           <br />
           <div class="login-button-and-singup">
             <button type="submit" class="login-button">Log In</button>
-            <a class="sign-up-link" href="/signupscreen">Sign Up</a>
+            <a @click="toSignUp()" class="sign-up-link" href="#">Sign Up</a>
           </div>
           <div class="recover-password-box">
             <RouterLink to="/recoverpassword" class="forgot-password-link">
@@ -70,6 +70,9 @@ export default {
     logInCall() {
       this.userStore.logIn(this.email, this.password);
     },
+    toSignUp(){
+    this.$router.push('/signupscreen')
+  },
   },
 };
 </script>
