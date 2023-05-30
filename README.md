@@ -1,6 +1,14 @@
 # spaceward
 
-This template should help get you started developing with Vue 3 in Vite.
+
+## Authors
+- [@dinaebh](https://github.com/dinaebh)
+- [@estelcm](https://github.com/estelcm)
+- [@SaraElBadri](https://github.com/SaraElBadri)
+
+
+## [Here, have a look at our poject.](https://candid-speculoos-15b506.netlify.app/)
+
 
 ## Recommended IDE Setup
 
